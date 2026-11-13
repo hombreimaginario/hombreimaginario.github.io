@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-13T23:03:20Z</updated>
+<updated>2026-11-13T23:16:04Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road MD: day one</title>
@@ -15,6 +15,10 @@
 <updated>2026-10-05T12:00:00Z</updated>
 <summary>Starting a Mega Drive port of Capcom&#x27;s Tiger Road by running the arcade&#x27;s own 68000 code on the console.</summary><category term="mega-drive"/>
 <content type="html">&lt;p&gt;A week ago, on 28 September, I started porting Capcom&#x27;s &lt;em&gt;Tiger Road&lt;/em&gt; (&lt;em&gt;Tora-he no Michi&lt;/em&gt;) to the Mega Drive with Claude. The arcade board pairs a 68000 with a Z80 for sound, the same combination the Mega Drive has, so instead of rewriting the game the plan is a binary port: the original 68000 code runs on the console, and a layer of glue code translates what it asks of the arcade hardware into Mega Drive graphics, palettes and sound. The first hours went into rebuilding the ROM, extracting the graphics, taking measurements in MAME and putting together a test ROM to find out whether the idea was viable at all.&lt;/p&gt;
-&lt;p&gt;It was. By the end of that first day the first level scrolled with its sprites, the arcade&#x27;s colours had been squeezed into the Mega Drive&#x27;s four 16-colour palettes, the music and effects were running on the arcade&#x27;s original Z80 program, and graphics were being sent by DMA straight from ROM to save CPU time. Testing on real hardware through a flashcart brought its own round of fixes, starting with keeping DMA transfers within what fits in vertical blank. The goal from here is a playable ROM that stays as faithful to the arcade as possible, accepting some cuts in colour and sound along the way.&lt;/p&gt;</content>
+&lt;p&gt;It was. By the end of that first day the first level scrolled with its sprites, the arcade&#x27;s colours had been squeezed into the Mega Drive&#x27;s four 16-colour palettes, the music and effects were running on the arcade&#x27;s original Z80 program, and graphics were being sent by DMA straight from ROM to save CPU time. Testing on real hardware through a flashcart brought its own round of fixes, starting with keeping DMA transfers within what fits in vertical blank. The goal from here is a playable ROM that stays as faithful to the arcade as possible, accepting some cuts in colour and sound along the way.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-md-day-one-02.png&quot; alt=&quot;Tiger Road on the Mega Drive: an old monk in a temple courtyard tells the hero to go save the children trapped inside.&quot; width=&quot;768&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
+  &lt;figcaption&gt;The port running in BlastEm.&lt;/figcaption&gt;
+&lt;/figure&gt;</content>
 </entry>
 </feed>

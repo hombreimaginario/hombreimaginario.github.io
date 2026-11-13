@@ -7,6 +7,8 @@
     "platforms": [
       "mega-drive"
     ],
-    "project": "tiger-road"
+    "project": "tiger-road",
+    "cover": "/img/2026/tiger-road-md-day-one-01.png",
+    "cover_pixel": true
   }
 ]
