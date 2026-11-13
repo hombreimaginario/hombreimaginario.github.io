@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-13T22:10:19Z</updated>
+<updated>2026-11-13T22:56:15Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Hello, world</title>
@@ -17,5 +17,15 @@
 <content type="html">&lt;p&gt;This is where I&#x27;ll be posting progress on my retro works: ports of arcade and console games to the Mega Drive, Saturn, Dreamcast and Neo Geo, plus whatever reverse engineering they need along the way.&lt;/p&gt;
 &lt;p&gt;Expect short updates rather than polished articles: what I tried, what worked, what didn&#x27;t, and a few screenshots. Use the platform buttons on the home page or the &lt;a href=&quot;https://hombreimaginario.com/archive/&quot;&gt;archive&lt;/a&gt; to follow a single system.&lt;/p&gt;
 &lt;p&gt;The site itself is plain static HTML on GitHub Pages, with no database behind it. If you&#x27;d rather not check back, there&#x27;s an &lt;a href=&quot;https://hombreimaginario.com/feed.xml&quot;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Tiger Road MD: day one</title>
+<link href="https://hombreimaginario.com/posts/tiger-road-md-day-one/"/>
+<id>https://hombreimaginario.com/posts/tiger-road-md-day-one/</id>
+<published>2026-09-28T12:00:00Z</published>
+<updated>2026-09-28T12:00:00Z</updated>
+<summary>Starting a Mega Drive port of Capcom&#x27;s Tiger Road by running the arcade&#x27;s own 68000 code on the console.</summary><category term="mega-drive"/>
+<content type="html">&lt;p&gt;On 28 September I started porting Capcom&#x27;s &lt;em&gt;Tiger Road&lt;/em&gt; (&lt;em&gt;Tora-he no Michi&lt;/em&gt;) to the Mega Drive with Claude. The arcade board pairs a 68000 with a Z80 for sound, the same combination the Mega Drive has, so instead of rewriting the game the plan is a binary port: the original 68000 code runs on the console, and a layer of glue code translates what it asks of the arcade hardware into Mega Drive graphics, palettes and sound. The first hours went into rebuilding the ROM, extracting the graphics, taking measurements in MAME and putting together a test ROM to find out whether the idea was viable at all.&lt;/p&gt;
+&lt;p&gt;It was. By the end of that first day the first level scrolled with its sprites, the arcade&#x27;s colours had been squeezed into the Mega Drive&#x27;s four 16-colour palettes, the music and effects were running on the arcade&#x27;s original Z80 program, and graphics were being sent by DMA straight from ROM to save CPU time. Testing on real hardware through a flashcart brought its own round of fixes, starting with keeping DMA transfers within what fits in vertical blank. The goal from here is a playable ROM that stays as faithful to the arcade as possible, accepting some cuts in colour and sound along the way.&lt;/p&gt;</content>
 </entry>
 </feed>
