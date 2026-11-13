@@ -178,6 +178,7 @@ def build_home(posts):
 <div class="tags">{tags_line(p)}</div>
 <h2 class="post-title"><a href="{url(p)}">{e(p['title'])}</a></h2>
 <p class="post-summary">{e(p['summary'])}</p>{cover}
+<a class="read-more" href="{url(p)}" aria-label="Read more: {e(p['title'])}">[+] read more</a>
 </div>
 </article>""")
     body = f"""{header()}
