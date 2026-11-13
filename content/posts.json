@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "hello-world",
+    "date": "2026-11-13",
+    "title": "Hello, world",
+    "summary": "A small home for progress notes on my retro ports: screenshots, findings and the occasional dead end.",
+    "platforms": [],
+    "project": "this-site"
+  }
+]

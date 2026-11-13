@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>hombreimaginario · retro works</title>
+<subtitle>Retro game ports and other retro works by hombreimaginario.</subtitle>
+<link href="https://hombreimaginario.com/feed.xml" rel="self"/>
+<link href="https://hombreimaginario.com/"/>
+<id>https://hombreimaginario.com/</id>
+<updated>2026-11-13T22:10:19Z</updated>
+<author><name>hombreimaginario</name></author>
+<entry>
+<title>Hello, world</title>
+<link href="https://hombreimaginario.com/posts/hello-world/"/>
+<id>https://hombreimaginario.com/posts/hello-world/</id>
+<published>2026-11-13T12:00:00Z</published>
+<updated>2026-11-13T12:00:00Z</updated>
+<summary>A small home for progress notes on my retro ports: screenshots, findings and the occasional dead end.</summary>
+<content type="html">&lt;p&gt;This is where I&#x27;ll be posting progress on my retro works: ports of arcade and console games to the Mega Drive, Saturn, Dreamcast and Neo Geo, plus whatever reverse engineering they need along the way.&lt;/p&gt;
+&lt;p&gt;Expect short updates rather than polished articles: what I tried, what worked, what didn&#x27;t, and a few screenshots. Use the platform buttons on the home page or the &lt;a href=&quot;https://hombreimaginario.com/archive/&quot;&gt;archive&lt;/a&gt; to follow a single system.&lt;/p&gt;
+&lt;p&gt;The site itself is plain static HTML on GitHub Pages, with no database behind it. If you&#x27;d rather not check back, there&#x27;s an &lt;a href=&quot;https://hombreimaginario.com/feed.xml&quot;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;</content>
+</entry>
+</feed>
