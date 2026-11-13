@@ -1,15 +1,7 @@
 [
   {
-    "slug": "hello-world",
-    "date": "2026-11-13",
-    "title": "Hello, world",
-    "summary": "A small home for progress notes on my retro ports: screenshots, findings and the occasional dead end.",
-    "platforms": [],
-    "project": "this-site"
-  },
-  {
     "slug": "tiger-road-md-day-one",
-    "date": "2026-09-28",
+    "date": "2026-10-05",
     "title": "Tiger Road MD: day one",
     "summary": "Starting a Mega Drive port of Capcom's Tiger Road by running the arcade's own 68000 code on the console.",
     "platforms": [

@@ -38,20 +38,18 @@
 <article style="display:flex;flex-direction:column;gap:44px">
 <header class="post-head">
 <div class="meta">
-<time datetime="2026-09-28">2026-09-28</time>
+<time datetime="2026-10-05">2026-10-05</time>
 <span class="tags">mega-drive · #tiger-road</span>
 <span>1 min read</span>
 </div>
 <h1>Tiger Road MD: day one</h1>
 </header>
 <div class="prose">
-<p>On 28 September I started porting Capcom's <em>Tiger Road</em> (<em>Tora-he no Michi</em>) to the Mega Drive with Claude. The arcade board pairs a 68000 with a Z80 for sound, the same combination the Mega Drive has, so instead of rewriting the game the plan is a binary port: the original 68000 code runs on the console, and a layer of glue code translates what it asks of the arcade hardware into Mega Drive graphics, palettes and sound. The first hours went into rebuilding the ROM, extracting the graphics, taking measurements in MAME and putting together a test ROM to find out whether the idea was viable at all.</p>
+<p>A week ago, on 28 September, I started porting Capcom's <em>Tiger Road</em> (<em>Tora-he no Michi</em>) to the Mega Drive with Claude. The arcade board pairs a 68000 with a Z80 for sound, the same combination the Mega Drive has, so instead of rewriting the game the plan is a binary port: the original 68000 code runs on the console, and a layer of glue code translates what it asks of the arcade hardware into Mega Drive graphics, palettes and sound. The first hours went into rebuilding the ROM, extracting the graphics, taking measurements in MAME and putting together a test ROM to find out whether the idea was viable at all.</p>
 <p>It was. By the end of that first day the first level scrolled with its sprites, the arcade's colours had been squeezed into the Mega Drive's four 16-colour palettes, the music and effects were running on the arcade's original Z80 program, and graphics were being sent by DMA straight from ROM to save CPU time. Testing on real hardware through a flashcart brought its own round of fixes, starting with keeping DMA transfers within what fits in vertical blank. The goal from here is a playable ROM that stays as faithful to the arcade as possible, accepting some cuts in colour and sound along the way.</p>
 </div>
 </article>
-<nav class="post-nav" aria-label="More posts">
-<a class="next" href="/posts/hello-world/">Hello, world →</a>
-</nav>
+
 </main>
 <footer class="site-footer">
 <span>© 2026 hombreimaginario.com</span>
