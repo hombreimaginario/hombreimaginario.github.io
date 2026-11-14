@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T17:45:29Z</updated>
+<updated>2026-11-14T17:47:46Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Cruis&#x27;n USA DC: the arcade, not the N64</title>
@@ -22,23 +22,6 @@
 &lt;p&gt;Four days in, it boots on the console and runs races with sound, saves the arcade&#x27;s settings to the VMU (whose screen also shows your position and speed), supports the Jump Pack, and is being tested on real hardware, which has already turned up its own set of hangs and glitches. The big fight ahead is speed: getting a frame rate that feels like the arcade.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Tiger Road NG: day one</title>
-<link href="https://hombreimaginario.com/posts/tiger-road-ng-day-one/"/>
-<id>https://hombreimaginario.com/posts/tiger-road-ng-day-one/</id>
-<published>2026-10-06T12:00:00Z</published>
-<updated>2026-10-06T12:00:00Z</updated>
-<summary>A second Tiger Road port, this time to the Neo Geo: the same arcade code, with backgrounds rebuilt from sprites and the music adapted to a different sound chip.</summary><category term="neo-geo"/>
-<content type="html">&lt;p&gt;Practically at the same time as the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;Mega Drive port&lt;/a&gt;, I started a second one, this time to the Neo Geo. SNK&#x27;s hardware also pairs a 68000 with a Z80 for sound, so the same binary-port approach applies, and much of the groundwork from the Mega Drive version (tools, documentation, notes on the arcade code) could be reused from the start.&lt;/p&gt;
-&lt;p&gt;The big difference is video: the Neo Geo has no tile-based background layers, only sprites and a fixed text layer, so the arcade&#x27;s scrolling backgrounds have to be rebuilt out of sprites. Within a few hours the original program was booting through to the title screen and the attract demo, with the arcade&#x27;s colours mapped to the Neo Geo palette and the picture matching the arcade. Unlike the Mega Drive, though, the Neo Geo has no 256-pixel-wide mode: its screen is 320 pixels wide, so for now, until I find an alternative (if there is one), the game runs with black bars on both sides.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-03.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero faces a hopping jiangshi vampire in front of a pile of skulls and a giant skull.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
-&lt;/figure&gt;
-&lt;p&gt;Sound took a different path. The arcade&#x27;s original Z80 program runs on the Neo Geo&#x27;s own Z80, with a driver that translates its output for the YM2610. The catch is that the arcade board has two YM2203 chips, six FM channels in total, while the YM2610 only has four, and squeezing the music into four channels meant losing parts of it, the bass among them. The answer was a mixed approach: some parts of the arcade music recorded as ADPCM-B samples and triggered in time with the rest. And since the port is meant for both MVS cabinets and AES home consoles, those first days also covered coins and DIP switches for the former, and free play with a difficulty menu for the latter.&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-02.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero, wielding an axe, flies upwards past green dragons in a cloud-patterned stage.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
-&lt;/figure&gt;</content>
-</entry>
-<entry>
 <title>Shadow Warrior DC: the console version it never had</title>
 <link href="https://hombreimaginario.com/posts/shadow-warrior-dc-first-days/"/>
 <id>https://hombreimaginario.com/posts/shadow-warrior-dc-first-days/</id>
@@ -53,11 +36,28 @@
 &lt;p&gt;The first playable build came together within a few hours of starting. A few days in, settings and saved games live on the VMU, compressed so a save fits in its few blocks; the VMU screen shows the title and the player&#x27;s stats; the Jump Pack rumbles on hits, heavy weapons and earthquakes; and an Options menu lets you switch on the PC cheat codes from the pad. Real hardware is already proving stricter than the emulators, with crashes from memory reads the SH-4 won&#x27;t tolerate.&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Tiger Road NG: day one</title>
+<link href="https://hombreimaginario.com/posts/tiger-road-ng-day-one/"/>
+<id>https://hombreimaginario.com/posts/tiger-road-ng-day-one/</id>
+<published>2026-10-04T12:00:00Z</published>
+<updated>2026-10-04T12:00:00Z</updated>
+<summary>A second Tiger Road port, this time to the Neo Geo: the same arcade code, with backgrounds rebuilt from sprites and the music adapted to a different sound chip.</summary><category term="neo-geo"/>
+<content type="html">&lt;p&gt;Practically at the same time as the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;Mega Drive port&lt;/a&gt;, I started a second one, this time to the Neo Geo. SNK&#x27;s hardware also pairs a 68000 with a Z80 for sound, so the same binary-port approach applies, and much of the groundwork from the Mega Drive version (tools, documentation, notes on the arcade code) could be reused from the start.&lt;/p&gt;
+&lt;p&gt;The big difference is video: the Neo Geo has no tile-based background layers, only sprites and a fixed text layer, so the arcade&#x27;s scrolling backgrounds have to be rebuilt out of sprites. Within a few hours the original program was booting through to the title screen and the attract demo, with the arcade&#x27;s colours mapped to the Neo Geo palette and the picture matching the arcade. Unlike the Mega Drive, though, the Neo Geo has no 256-pixel-wide mode: its screen is 320 pixels wide, so for now, until I find an alternative (if there is one), the game runs with black bars on both sides.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-03.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero faces a hopping jiangshi vampire in front of a pile of skulls and a giant skull.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;Sound took a different path. The arcade&#x27;s original Z80 program runs on the Neo Geo&#x27;s own Z80, with a driver that translates its output for the YM2610. The catch is that the arcade board has two YM2203 chips, six FM channels in total, while the YM2610 only has four, and squeezing the music into four channels meant losing parts of it, the bass among them. The answer was a mixed approach: some parts of the arcade music recorded as ADPCM-B samples and triggered in time with the rest. And since the port is meant for both MVS cabinets and AES home consoles, those first days also covered coins and DIP switches for the former, and free play with a difficulty menu for the latter.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-02.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero, wielding an axe, flies upwards past green dragons in a cloud-patterned stage.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;</content>
+</entry>
+<entry>
 <title>Tiger Road MD: day one</title>
 <link href="https://hombreimaginario.com/posts/tiger-road-md-day-one/"/>
 <id>https://hombreimaginario.com/posts/tiger-road-md-day-one/</id>
-<published>2026-10-05T12:00:00Z</published>
-<updated>2026-10-05T12:00:00Z</updated>
+<published>2026-10-03T12:00:00Z</published>
+<updated>2026-10-03T12:00:00Z</updated>
 <summary>Starting a Mega Drive port of Capcom&#x27;s Tiger Road by running the arcade&#x27;s own 68000 code on the console.</summary><category term="mega-drive"/>
 <content type="html">&lt;p&gt;&lt;em&gt;Tiger Road&lt;/em&gt; (&lt;em&gt;Tora-he no Michi&lt;/em&gt;) is a 1987 action platformer by Capcom. It was released between &lt;em&gt;Ghosts&#x27;n Goblins&lt;/em&gt; (1985) and &lt;em&gt;Ghouls&#x27;n Ghosts&lt;/em&gt; (1988) and shares their style of platforming and gameplay, but set in medieval China.&lt;/p&gt;
 &lt;p&gt;The project is to port it to several classic consoles, starting with the Mega Drive, which will naturally be the one that takes a few cuts (at least until someone with a lot more talent does it better).&lt;/p&gt;
