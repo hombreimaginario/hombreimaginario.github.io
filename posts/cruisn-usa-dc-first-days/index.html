@@ -10,7 +10,7 @@
 <meta property="og:title" content="Cruis&#x27;n USA DC: the arcade, not the N64">
 <meta property="og:description" content="Bringing the original arcade Cruis&#x27;n USA to the Dreamcast, starting from the arcade code rather than the Nintendo 64 version, and finding out the hardware gap is wider than I thought.">
 <meta property="og:url" content="https://hombreimaginario.com/posts/cruisn-usa-dc-first-days/">
-<meta property="og:image" content="https://hombreimaginario.com/img/2026/cruisn-usa-dc-desert.png">
+<meta property="og:image" content="https://hombreimaginario.com/img/2026/cruisn-usa-dc-golden-gate.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
@@ -49,12 +49,12 @@
 </header>
 <div class="prose">
 <figure class="cover">
-  <img src="/img/2026/cruisn-usa-dc-desert.png" alt="Cruis&#x27;n USA on the Dreamcast: a red sports car races down a desert highway under a cloudy sky, in 10th place.">
+  <img src="/img/2026/cruisn-usa-dc-golden-gate.png" alt="Cruis&#x27;n USA on the Dreamcast: a silver car approaches the Golden Gate Bridge past road barriers, palm trees and a cypress.">
 </figure>
 <p>This is not a port of the Nintendo 64 version of <em>Cruis'n USA</em>. The starting point is the original arcade code, the program that ran on Midway's V-Unit hardware, which has been made public. The idea is to bring the arcade game itself to the Dreamcast, with its own graphics, sound and handling, rather than adapt the home conversion.</p>
 <p>I naively thought it would be simpler than it is. The arcade's main processor is a Texas Instruments TMS320C31, a DSP that has nothing in common with the Dreamcast's SH-4, so its code can't just run: it first ran through an interpreter, and then through a static recompiler that translates the C31 code into C, checked against the interpreter so both behave the same. The 3D is just as different. The arcade prepares its scenes for its own polygon hardware, so the routines that transform vertices and send polygons have to be rewritten natively for the PowerVR, and the textures converted on the fly. Sound comes from a separate DCS board; for now, the game's sounds are pre-rendered with MAME into a sound bank that the Dreamcast plays back following the same DCS commands the game sends.</p>
 <figure>
-  <img src="/img/2026/cruisn-usa-dc-golden-gate.png" alt="Cruis'n USA on the Dreamcast: a silver car approaches the Golden Gate Bridge past road barriers, palm trees and a cypress." width="640" height="480" loading="lazy">
+  <img src="/img/2026/cruisn-usa-dc-desert.png" alt="Cruis'n USA on the Dreamcast: a red sports car races down a desert highway under a cloudy sky, in 10th place." width="640" height="480" loading="lazy">
 </figure>
 <p>Four days in, it boots on the console and runs races with sound, saves the arcade's settings to the VMU (whose screen also shows your position and speed), supports the Jump Pack, and is being tested on real hardware, which has already turned up its own set of hangs and glitches. The big fight ahead is speed: getting a frame rate that feels like the arcade.</p>
 </div>
