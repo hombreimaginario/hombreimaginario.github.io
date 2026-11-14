@@ -48,5 +48,15 @@
     "project": "shadow-warrior",
     "cover": "/img/2026/shadow-warrior-dc-title.png",
     "cover_alt": "Shadow Warrior on the Dreamcast: the red title menu with New Game, Load Game, Save Game, Options and Credits over a yin-yang symbol."
+  },
+  {
+    "slug": "cruisn-usa-dc-progress-report",
+    "date": "2026-10-18",
+    "title": "Cruis'n USA DC: progress report",
+    "summary": "A few weeks into the Dreamcast port of the arcade Cruis'n USA: how the V-Unit code gets onto the console, the problems solved along the way, the extras, and where performance stands.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "cruisn-usa"
   }
 ]
