@@ -1,0 +1,16 @@
+<p>Two weeks after the <a href="/posts/shadow-warrior-dc-first-days/">first post</a>, the Dreamcast port has moved from "it runs" towards "it feels like a console game". Most of the work has gone into living with the console's limits: 16 MB of RAM, a CD drive instead of a hard disk, and a VMU with very little room for saves.</p>
+<p>Some of the problems found along the way, and how they were solved:</p>
+<ul>
+  <li><strong>Pauses to read the disc:</strong> any graphic or sound not already in memory meant stopping to read the CD in the middle of the action. Each level now preloads what fits in the cache by priority, leaving rare art for last, and makes sure Lo Wang's voice lines and pain grunts, explosion debris and the city's ambient sounds (sirens, traffic, aircraft, bikes) are always there. Diagnostic builds count every disc read during play to find what's still missing.</li>
+  <li><strong>Music cut by data reads:</strong> the drive can't play a CD audio track and read data at the same time, so the music used to stop whenever the game loaded something. It now resumes from the point where it was cut instead of starting over.</li>
+  <li><strong>Saves too big for a VMU:</strong> saves are now compressed in chunks straight to the file, store only what has changed since the level loaded, and use a half-size picture for the load menu. The settings file went down from 14 blocks to 5, and the game tells you how many blocks a save needs before writing it.</li>
+  <li><strong>Speed:</strong> triple buffering, a larger 9 MB cache for the game's art, and faster code for drawing sprites, clearing the screen and copying memory.</li>
+</ul>
+<p>And some additions for the Dreamcast version:</p>
+<ul>
+  <li>VGA output, for a sharper picture on a monitor.</li>
+  <li>A hand-drawn <em>Shadow Warrior</em> logo on the VMU screen outside play, on top of the player's stats during the game.</li>
+  <li>The Options menu shows which controller slots are in use and the last jolt sent to the Jump Pack.</li>
+  <li>Menus moved and spaced so they fit within the visible area of a CRT, and calmer turning with the analog stick.</li>
+  <li>Shorter Credits screens with the port signed, keeping the original GPL notice scrolling underneath.</li>
+</ul>

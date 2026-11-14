@@ -60,5 +60,15 @@
     "project": "cruisn-usa",
     "cover": "/img/2026/cruisn-usa-dc-redwoods.png",
     "cover_alt": "Cruis'n USA on the Dreamcast: a red sports car drives off-road past tree stumps towards a redwood forest, in 10th place."
+  },
+  {
+    "slug": "shadow-warrior-dc-two-weeks",
+    "date": "2026-10-19",
+    "title": "Shadow Warrior DC: two weeks in",
+    "summary": "Two weeks of Shadow Warrior on the Dreamcast: fewer pauses for disc reads, saves that fit on a VMU, music that picks up where it left off, VGA output and a hand-drawn logo on the VMU.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "shadow-warrior"
   }
 ]

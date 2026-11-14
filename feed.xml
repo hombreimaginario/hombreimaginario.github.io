@@ -5,8 +5,32 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T20:38:11Z</updated>
+<updated>2026-11-14T20:49:49Z</updated>
 <author><name>hombreimaginario</name></author>
+<entry>
+<title>Shadow Warrior DC: two weeks in</title>
+<link href="https://hombreimaginario.com/posts/shadow-warrior-dc-two-weeks/"/>
+<id>https://hombreimaginario.com/posts/shadow-warrior-dc-two-weeks/</id>
+<published>2026-10-19T12:00:00Z</published>
+<updated>2026-10-19T12:00:00Z</updated>
+<summary>Two weeks of Shadow Warrior on the Dreamcast: fewer pauses for disc reads, saves that fit on a VMU, music that picks up where it left off, VGA output and a hand-drawn logo on the VMU.</summary><category term="dreamcast"/>
+<content type="html">&lt;p&gt;Two weeks after the &lt;a href=&quot;https://hombreimaginario.com/posts/shadow-warrior-dc-first-days/&quot;&gt;first post&lt;/a&gt;, the Dreamcast port has moved from &quot;it runs&quot; towards &quot;it feels like a console game&quot;. Most of the work has gone into living with the console&#x27;s limits: 16 MB of RAM, a CD drive instead of a hard disk, and a VMU with very little room for saves.&lt;/p&gt;
+&lt;p&gt;Some of the problems found along the way, and how they were solved:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Pauses to read the disc:&lt;/strong&gt; any graphic or sound not already in memory meant stopping to read the CD in the middle of the action. Each level now preloads what fits in the cache by priority, leaving rare art for last, and makes sure Lo Wang&#x27;s voice lines and pain grunts, explosion debris and the city&#x27;s ambient sounds (sirens, traffic, aircraft, bikes) are always there. Diagnostic builds count every disc read during play to find what&#x27;s still missing.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Music cut by data reads:&lt;/strong&gt; the drive can&#x27;t play a CD audio track and read data at the same time, so the music used to stop whenever the game loaded something. It now resumes from the point where it was cut instead of starting over.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Saves too big for a VMU:&lt;/strong&gt; saves are now compressed in chunks straight to the file, store only what has changed since the level loaded, and use a half-size picture for the load menu. The settings file went down from 14 blocks to 5, and the game tells you how many blocks a save needs before writing it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Speed:&lt;/strong&gt; triple buffering, a larger 9 MB cache for the game&#x27;s art, and faster code for drawing sprites, clearing the screen and copying memory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And some additions for the Dreamcast version:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;VGA output, for a sharper picture on a monitor.&lt;/li&gt;
+  &lt;li&gt;A hand-drawn &lt;em&gt;Shadow Warrior&lt;/em&gt; logo on the VMU screen outside play, on top of the player&#x27;s stats during the game.&lt;/li&gt;
+  &lt;li&gt;The Options menu shows which controller slots are in use and the last jolt sent to the Jump Pack.&lt;/li&gt;
+  &lt;li&gt;Menus moved and spaced so they fit within the visible area of a CRT, and calmer turning with the analog stick.&lt;/li&gt;
+  &lt;li&gt;Shorter Credits screens with the port signed, keeping the original GPL notice scrolling underneath.&lt;/li&gt;
+&lt;/ul&gt;</content>
+</entry>
 <entry>
 <title>Cruis&#x27;n USA DC: progress report</title>
 <link href="https://hombreimaginario.com/posts/cruisn-usa-dc-progress-report/"/>
