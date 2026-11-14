@@ -148,7 +148,9 @@ def page(title, body, description=SITE_DESC, canonical="/", og_image=None, scrip
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{SITE_URL}{canonical}">{og_img}
 <meta name="twitter:card" content="{'summary_large_image' if og_image else 'summary'}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/atom+xml" title="{SITE_NAME}" href="/feed.xml">
 <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
