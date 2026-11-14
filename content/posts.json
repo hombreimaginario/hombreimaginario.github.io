@@ -19,6 +19,8 @@
     "platforms": [
       "neo-geo"
     ],
-    "project": "tiger-road"
+    "project": "tiger-road",
+    "cover": "/img/2026/tiger-road-ng-day-one-01.png",
+    "cover_pixel": true
   }
 ]
