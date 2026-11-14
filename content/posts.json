@@ -36,5 +36,17 @@
     "project": "cruisn-usa",
     "cover": "/img/2026/cruisn-usa-dc-desert.png",
     "cover_alt": "Cruis'n USA on the Dreamcast: a red sports car races down a desert highway under a cloudy sky, in 10th place."
+  },
+  {
+    "slug": "shadow-warrior-dc-first-days",
+    "date": "2026-10-06",
+    "title": "Shadow Warrior DC: the console version it never had",
+    "summary": "A fan port of 3D Realms' 1997 Build engine shooter to the Dreamcast, starting from the released source code and its portable JFShadowWarrior version.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "shadow-warrior",
+    "cover": "/img/2026/shadow-warrior-dc-title.png",
+    "cover_alt": "Shadow Warrior on the Dreamcast: the red title menu with New Game, Load Game, Save Game, Options and Credits over a yin-yang symbol."
   }
 ]
