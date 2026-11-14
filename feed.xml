@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T20:49:58Z</updated>
+<updated>2026-11-14T21:07:25Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: two weeks in</title>
@@ -22,6 +22,9 @@
   &lt;li&gt;&lt;strong&gt;Saves too big for a VMU:&lt;/strong&gt; saves are now compressed in chunks straight to the file, store only what has changed since the level loaded, and use a half-size picture for the load menu. The settings file went down from 14 blocks to 5, and the game tells you how many blocks a save needs before writing it.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Speed:&lt;/strong&gt; triple buffering, a larger 9 MB cache for the game&#x27;s art, and faster code for drawing sprites, clearing the screen and copying memory.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/shadow-warrior-dc-episode.png&quot; alt=&quot;Shadow Warrior on the Dreamcast: the Episode menu offering Enter the Wang (four levels, shareware version) and Code of Honor (eighteen levels, full version only).&quot; width=&quot;960&quot; height=&quot;720&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
 &lt;p&gt;And some additions for the Dreamcast version:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;VGA output, for a sharper picture on a monitor.&lt;/li&gt;

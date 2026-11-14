@@ -69,6 +69,9 @@
     "platforms": [
       "dreamcast"
     ],
-    "project": "shadow-warrior"
+    "project": "shadow-warrior",
+    "cover": "/img/2026/shadow-warrior-dc-boat.png",
+    "cover_pixel": true,
+    "cover_alt": "Shadow Warrior on the Dreamcast: Lo Wang holds a katana on a wooden boat crossing water between rock walls, a medkit at his feet."
   }
 ]
