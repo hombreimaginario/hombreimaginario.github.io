@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T20:49:49Z</updated>
+<updated>2026-11-14T20:49:58Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: two weeks in</title>
@@ -25,7 +25,7 @@
 &lt;p&gt;And some additions for the Dreamcast version:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;VGA output, for a sharper picture on a monitor.&lt;/li&gt;
-  &lt;li&gt;A hand-drawn &lt;em&gt;Shadow Warrior&lt;/em&gt; logo on the VMU screen outside play, on top of the player&#x27;s stats during the game.&lt;/li&gt;
+  &lt;li&gt;A hand-drawn &lt;em&gt;Shadow Warrior&lt;/em&gt; logo on the VMU screen outside play, in addition to the player&#x27;s stats during the game.&lt;/li&gt;
   &lt;li&gt;The Options menu shows which controller slots are in use and the last jolt sent to the Jump Pack.&lt;/li&gt;
   &lt;li&gt;Menus moved and spaced so they fit within the visible area of a CRT, and calmer turning with the analog stick.&lt;/li&gt;
   &lt;li&gt;Shorter Credits screens with the port signed, keeping the original GPL notice scrolling underneath.&lt;/li&gt;
