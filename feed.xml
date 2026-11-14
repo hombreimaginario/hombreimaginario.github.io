@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T00:14:32Z</updated>
+<updated>2026-11-14T00:21:42Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road NG: day one</title>
@@ -14,12 +14,15 @@
 <published>2026-10-06T12:00:00Z</published>
 <updated>2026-10-06T12:00:00Z</updated>
 <summary>A second Tiger Road port, this time to the Neo Geo: the same arcade code, with backgrounds rebuilt from sprites and the music adapted to a different sound chip.</summary><category term="neo-geo"/>
-<content type="html">&lt;p&gt;Practically at the same time as the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;Mega Drive port&lt;/a&gt;, I started a second one, this time to the Neo Geo. SNK&#x27;s hardware also pairs a 68000 with a Z80 for sound, so the same binary-port approach applies, and much of the groundwork from the Mega Drive version (tools, documentation, notes on the arcade code) could be reused from the start. The big difference is video: the Neo Geo has no tile-based background layers, only sprites and a fixed text layer, so the arcade&#x27;s scrolling backgrounds have to be rebuilt out of sprites. Within a few hours the original program was booting through to the title screen and the attract demo, with the arcade&#x27;s colours mapped to the Neo Geo palette and the picture matching the arcade. Unlike the Mega Drive, though, the Neo Geo has no 256-pixel-wide mode: its screen is 320 pixels wide, so for now, until I find an alternative (if there is one), the game runs with black bars on both sides.&lt;/p&gt;
-&lt;p&gt;Sound took a different path. The arcade&#x27;s original Z80 program runs on the Neo Geo&#x27;s own Z80, with a driver that translates its output for the YM2610. The catch is that the arcade board has two YM2203 chips, six FM channels in total, while the YM2610 only has four, and squeezing the music into four channels meant losing parts of it, the bass among them. The answer was a mixed approach: some parts of the arcade music recorded as ADPCM-B samples and triggered in time with the rest. And since the port is meant for both MVS cabinets and AES home consoles, those first days also covered coins and DIP switches for the former, and free play with a difficulty menu for the latter.&lt;/p&gt;
-&lt;div class=&quot;gallery&quot;&gt;
-  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-02.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero, wielding an axe, flies upwards past green dragons in a cloud-patterned stage.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
+<content type="html">&lt;p&gt;Practically at the same time as the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;Mega Drive port&lt;/a&gt;, I started a second one, this time to the Neo Geo. SNK&#x27;s hardware also pairs a 68000 with a Z80 for sound, so the same binary-port approach applies, and much of the groundwork from the Mega Drive version (tools, documentation, notes on the arcade code) could be reused from the start.&lt;/p&gt;
+&lt;p&gt;The big difference is video: the Neo Geo has no tile-based background layers, only sprites and a fixed text layer, so the arcade&#x27;s scrolling backgrounds have to be rebuilt out of sprites. Within a few hours the original program was booting through to the title screen and the attract demo, with the arcade&#x27;s colours mapped to the Neo Geo palette and the picture matching the arcade. Unlike the Mega Drive, though, the Neo Geo has no 256-pixel-wide mode: its screen is 320 pixels wide, so for now, until I find an alternative (if there is one), the game runs with black bars on both sides.&lt;/p&gt;
+&lt;figure&gt;
   &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-03.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero faces a hopping jiangshi vampire in front of a pile of skulls and a giant skull.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
-&lt;/div&gt;</content>
+&lt;/figure&gt;
+&lt;p&gt;Sound took a different path. The arcade&#x27;s original Z80 program runs on the Neo Geo&#x27;s own Z80, with a driver that translates its output for the YM2610. The catch is that the arcade board has two YM2203 chips, six FM channels in total, while the YM2610 only has four, and squeezing the music into four channels meant losing parts of it, the bass among them. The answer was a mixed approach: some parts of the arcade music recorded as ADPCM-B samples and triggered in time with the rest. And since the port is meant for both MVS cabinets and AES home consoles, those first days also covered coins and DIP switches for the former, and free play with a difficulty menu for the latter.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ng-day-one-02.png&quot; alt=&quot;Tiger Road on the Neo Geo: the hero, wielding an axe, flies upwards past green dragons in a cloud-patterned stage.&quot; width=&quot;960&quot; height=&quot;672&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;</content>
 </entry>
 <entry>
 <title>Tiger Road MD: day one</title>
