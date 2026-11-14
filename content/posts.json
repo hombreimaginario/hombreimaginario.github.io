@@ -24,5 +24,15 @@
     "cover": "/img/2026/tiger-road-ng-day-one-01.png",
     "cover_pixel": true,
     "cover_alt": "Tiger Road on the Neo Geo: the PRESS START screen, with the hero and an ogre-like enemy in a ruined stone room."
+  },
+  {
+    "slug": "cruisn-usa-dc-first-days",
+    "date": "2026-10-07",
+    "title": "Cruis'n USA DC: the arcade, not the N64",
+    "summary": "Bringing the original arcade Cruis'n USA to the Dreamcast, starting from the arcade code rather than the Nintendo 64 version, and finding out the hardware gap is wider than I thought.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "cruisn-usa"
   }
 ]

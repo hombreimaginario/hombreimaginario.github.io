@@ -5,8 +5,19 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T11:28:27Z</updated>
+<updated>2026-11-14T14:59:29Z</updated>
 <author><name>hombreimaginario</name></author>
+<entry>
+<title>Cruis&#x27;n USA DC: the arcade, not the N64</title>
+<link href="https://hombreimaginario.com/posts/cruisn-usa-dc-first-days/"/>
+<id>https://hombreimaginario.com/posts/cruisn-usa-dc-first-days/</id>
+<published>2026-10-07T12:00:00Z</published>
+<updated>2026-10-07T12:00:00Z</updated>
+<summary>Bringing the original arcade Cruis&#x27;n USA to the Dreamcast, starting from the arcade code rather than the Nintendo 64 version, and finding out the hardware gap is wider than I thought.</summary><category term="dreamcast"/>
+<content type="html">&lt;p&gt;This is not a port of the Nintendo 64 version of &lt;em&gt;Cruis&#x27;n USA&lt;/em&gt;. The starting point is the original arcade code, the program that ran on Midway&#x27;s V-Unit hardware, which has been made public. The idea is to bring the arcade game itself to the Dreamcast, with its own graphics, sound and handling, rather than adapt the home conversion.&lt;/p&gt;
+&lt;p&gt;I naively thought it would be simpler than it is. The arcade&#x27;s main processor is a Texas Instruments TMS320C31, a DSP that has nothing in common with the Dreamcast&#x27;s SH-4, so its code can&#x27;t just run: it first ran through an interpreter, and then through a static recompiler that translates the C31 code into C, checked against the interpreter so both behave the same. The 3D is just as different. The arcade prepares its scenes for its own polygon hardware, so the routines that transform vertices and send polygons have to be rewritten natively for the PowerVR, and the textures converted on the fly. Sound comes from a separate DCS board; for now, the game&#x27;s sounds are pre-rendered with MAME into a sound bank that the Dreamcast plays back following the same DCS commands the game sends.&lt;/p&gt;
+&lt;p&gt;Four days in, it boots on the console and runs races with sound, saves the arcade&#x27;s settings to the VMU (whose screen also shows your position and speed), supports the Jump Pack, and is being tested on real hardware, which has already turned up its own set of hangs and glitches. The big fight ahead is speed: getting a frame rate that feels like the arcade.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>Tiger Road NG: day one</title>
 <link href="https://hombreimaginario.com/posts/tiger-road-ng-day-one/"/>
