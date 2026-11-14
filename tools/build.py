@@ -242,6 +242,11 @@ def build_post(p, newer, older):
     if newer:
         nav.append(f'<a class="next" href="{url(newer)}">{e(newer["title"])} →</a>')
     nav_html = f'<nav class="post-nav" aria-label="More posts">\n{chr(10).join(nav)}\n</nav>' if nav else ""
+    cover_html = ""
+    if p.get("cover"):
+        pixel = ' class="pixel"' if p.get("cover_pixel") else ''
+        alt = e(p.get("cover_alt", p["title"]))
+        cover_html = f'<figure class="cover">\n  <img{pixel} src="{e(p["cover"])}" alt="{alt}">\n</figure>\n'
     tags = tags_line(p)
     tags_html = f'<span class="tags">{tags}</span>' if tags else ""
     body = f"""{header(small=True)}
@@ -256,7 +261,7 @@ def build_post(p, newer, older):
 <h1>{e(p['title'])}</h1>
 </header>
 <div class="prose">
-{p['body']}
+{cover_html}{p['body']}
 </div>
 </article>
 {nav_html}

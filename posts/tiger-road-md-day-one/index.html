@@ -46,16 +46,19 @@
 <h1>Tiger Road MD: day one</h1>
 </header>
 <div class="prose">
-<p><em>Tiger Road</em> is a 1987 action platformer by Capcom. It came out between <em>Ghosts'n Goblins</em> (1985) and <em>Ghouls'n Ghosts</em> (1988) and shares their style of platforming and gameplay, but it's set in medieval China.</p>
+<figure class="cover">
+  <img class="pixel" src="/img/2026/tiger-road-md-day-one-01.png" alt="Tiger Road on the Mega Drive: the hero, holding a blue-bladed weapon, faces a giant armoured boss in a Chinese palace hall.">
+</figure>
+<p><em>Tiger Road</em> (<em>Tora-he no Michi</em>) is a 1987 action platformer by Capcom. It was released between <em>Ghosts'n Goblins</em> (1985) and <em>Ghouls'n Ghosts</em> (1988) and shares their style of platforming and gameplay, but set in medieval China.</p>
 <p>The project is to port it to several classic consoles, starting with the Mega Drive, which will naturally be the one that takes a few cuts (at least until someone with a lot more talent does it better).</p>
-<p>It runs on a "Capcom-based" or pre-CPS board, and its CPU and sound chips are reasonably similar to the Mega Drive's. Its resolution is 256×224, which matches one of the console's video modes, so it fills the screen with nothing lost and no need to crop or stretch the graphics.</p>
-<p>A week ago, on 28 September, I started porting Capcom's <em>Tiger Road</em> (<em>Tora-he no Michi</em>) to the Mega Drive with Claude. The arcade board pairs a 68000 with a Z80 for sound, the same combination the Mega Drive has, so instead of rewriting the game the plan is a binary port: the original 68000 code runs on the console, and a layer of glue code translates what it asks of the arcade hardware into Mega Drive graphics, palettes and sound. The first hours went into rebuilding the ROM, extracting the graphics, taking measurements in MAME and putting together a test ROM to find out whether the idea was viable at all.</p>
+<p>It runs on a "Capcom-based" or pre-CPS board, and its CPU and sound chips are reasonably similar to the Mega Drive's. Its resolution is 256×224, which matches one of the console's video modes, meaning it fills the screen with nothing lost and no need to crop or stretch the graphics.</p>
+<p>So instead of rewriting the game the plan is a binary port: the original 68000 code runs on the console, and a layer of glue code translates what it asks of the arcade hardware into Mega Drive graphics, palettes and sound. The first hours went into rebuilding the ROM, extracting the graphics, taking measurements in MAME and putting together a test ROM to find out whether the idea was viable at all.</p>
 <p>A couple days later the first level scrolled with its sprites, the arcade's colours had been squeezed into the Mega Drive's four 16-colour palettes, the music and effects were running on the arcade's original Z80 program, and graphics were being sent by DMA straight from ROM to save CPU time. Testing on real hardware through a flashcart brought its own round of fixes, starting with keeping DMA transfers within what fits in vertical blank. The goal from here is a playable ROM that stays as faithful to the arcade as possible, accepting some cuts in colour and sound along the way.</p>
 <figure>
   <img class="pixel" src="/img/2026/tiger-road-md-day-one-02.png" alt="Tiger Road on the Mega Drive: an old monk in a temple courtyard tells the hero to go save the children trapped inside." width="768" height="672" loading="lazy">
   <figcaption>The port running in BlastEm.</figcaption>
 </figure>
-<p>Everything is being done from the original arcade ROM. Apart from personal taste, I chose this game because, as far as I know, it doesn't step on any other homebrew project already under way. I don't mean to annoy anyone, or to pretend I know more than I do. I'm doing all this for fun, and to learn with the tools I now have at hand, mostly through my work.</p>
+<p>Everything is being done from the original arcade ROM. Apart from personal taste, I chose this game because, as far as I know, it doesn't step on any other homebrew project already under way. I'm doing all this for fun, and to learn with the tools I now have at hand, mostly through my work.</p>
 <p>Once I'd confirmed it could be done, I started adapting it in parallel to the Neo Geo, Saturn and Dreamcast.</p>
 </div>
 </article>

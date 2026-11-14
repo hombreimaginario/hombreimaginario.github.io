@@ -9,7 +9,8 @@
     ],
     "project": "tiger-road",
     "cover": "/img/2026/tiger-road-md-day-one-01.png",
-    "cover_pixel": true
+    "cover_pixel": true,
+    "cover_alt": "Tiger Road on the Mega Drive: the hero, holding a blue-bladed weapon, faces a giant armoured boss in a Chinese palace hall."
   },
   {
     "slug": "tiger-road-ng-day-one",
@@ -21,6 +22,7 @@
     ],
     "project": "tiger-road",
     "cover": "/img/2026/tiger-road-ng-day-one-01.png",
-    "cover_pixel": true
+    "cover_pixel": true,
+    "cover_alt": "Tiger Road on the Neo Geo: the PRESS START screen, with the hero and an ogre-like enemy in a ruined stone room."
   }
 ]
