@@ -10,7 +10,8 @@
 <meta property="og:title" content="Cruis&#x27;n USA DC: progress report">
 <meta property="og:description" content="A few weeks into the Dreamcast port of the arcade Cruis&#x27;n USA: how the V-Unit code gets onto the console, the problems solved along the way, the extras, and where performance stands.">
 <meta property="og:url" content="https://hombreimaginario.com/posts/cruisn-usa-dc-progress-report/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://hombreimaginario.com/img/2026/cruisn-usa-dc-redwoods.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -47,9 +48,15 @@
 <h1>Cruis&#x27;n USA DC: progress report</h1>
 </header>
 <div class="prose">
-<p>For a few weeks now I've been working on this Dreamcast port of the original arcade version of <em>Cruis'n USA</em>. As I mentioned, this is not the N64 game, at all: it's the real arcade's graphics, sound, cars and tracks running natively on the DC. It's still a work in progress, but it already boots, plays full races and has been tested on real hardware through GDemu.</p>
+<figure class="cover">
+  <img src="/img/2026/cruisn-usa-dc-redwoods.png" alt="Cruis&#x27;n USA on the Dreamcast: a red sports car drives off-road past tree stumps towards a redwood forest, in 10th place.">
+</figure>
+<p>For a few weeks now I've been working on this Dreamcast port of the original arcade version of <em>Cruis'n USA</em>. <a href="/posts/cruisn-usa-dc-first-days/">As I mentioned before</a>, this is not the N64 game, at all: it's the real arcade's graphics, sound, cars and tracks running natively on the DC. It's still a work in progress, but it already boots, plays full races and has been tested on real hardware through GDemu.</p>
 <p>The arcade runs on Midway's V-Unit board, built around a TMS320C31 DSP and a custom polygon chip, so there's no ready-made path to the Dreamcast. The source code for the game was made public and I used it as a map, but rather than rewriting the game, the C31 machine code was first translated into C, which was then compiled for the Dreamcast's SH-4 with KallistiOS. The hottest routines (vertex transforms, polygon submission, object scanning) are rewritten by hand as native code. The V-Unit's polygon packets are converted on the fly into PowerVR polygons, and the DCS sound is pre-rendered into samples that play on the AICA. Everything is checked against a reference interpreter and against MAME, frame by frame where needed.</p>
 <p>So yes, this was all a pain in the ass and turned out to be much more time-consuming than I initially thought, despite the source code being available, because the hardware used on the original arcade and the one inside our favourite white box are vastly different.</p>
+<figure>
+  <img src="/img/2026/cruisn-usa-dc-attract.png" alt="Cruis'n USA on the Dreamcast: the attract mode with the game's logo over a tree-lined avenue, a purple and a blue car ahead and a red Corvette alongside." width="640" height="480" loading="lazy">
+</figure>
 <p>Some of the problems found along the way, and how they were solved:</p>
 <ul>
   <li><strong>Floating point:</strong> the C31 uses its own float format. Every value has to be converted to and from IEEE, thousands of times per frame. A bit-exact fast path, verified against all 4 billion possible values, gave a 6.6% speed-up on its own.</li>
@@ -59,6 +66,9 @@
   <li><strong>Real PowerVR vs emulators:</strong> issues that Flycast and Redream don't show (stray lines on distant cars, polygon list overflows) were tracked down with diagnostic builds on real consoles. Still needs fixes, though.</li>
   <li><strong>Textures:</strong> the arcade's 8-bit paletted texture pages are converted to ARGB1555 and cached in VRAM, with large textures stored at half resolution to fit.</li>
 </ul>
+<figure>
+  <img src="/img/2026/cruisn-usa-dc-choose-car.png" alt="Cruis'n USA on the Dreamcast: the Choose Car screen in a garage, showing the Devastator V1's stats and the prompt 'Press X for hidden cars!'." width="640" height="480" loading="lazy">
+</figure>
 <p>On the other hand, some extras for this port are:</p>
 <ul>
   <li>No RAM/ROM check or Midway/Nintendo weird-looking loading screen: new, cleaner, faster custom loading screen with the game's logo.</li>

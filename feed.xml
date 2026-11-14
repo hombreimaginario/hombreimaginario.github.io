@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T20:31:34Z</updated>
+<updated>2026-11-14T20:34:11Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Cruis&#x27;n USA DC: progress report</title>
@@ -14,9 +14,12 @@
 <published>2026-10-18T12:00:00Z</published>
 <updated>2026-10-18T12:00:00Z</updated>
 <summary>A few weeks into the Dreamcast port of the arcade Cruis&#x27;n USA: how the V-Unit code gets onto the console, the problems solved along the way, the extras, and where performance stands.</summary><category term="dreamcast"/>
-<content type="html">&lt;p&gt;For a few weeks now I&#x27;ve been working on this Dreamcast port of the original arcade version of &lt;em&gt;Cruis&#x27;n USA&lt;/em&gt;. As I mentioned, this is not the N64 game, at all: it&#x27;s the real arcade&#x27;s graphics, sound, cars and tracks running natively on the DC. It&#x27;s still a work in progress, but it already boots, plays full races and has been tested on real hardware through GDemu.&lt;/p&gt;
+<content type="html">&lt;p&gt;For a few weeks now I&#x27;ve been working on this Dreamcast port of the original arcade version of &lt;em&gt;Cruis&#x27;n USA&lt;/em&gt;. &lt;a href=&quot;https://hombreimaginario.com/posts/cruisn-usa-dc-first-days/&quot;&gt;As I mentioned before&lt;/a&gt;, this is not the N64 game, at all: it&#x27;s the real arcade&#x27;s graphics, sound, cars and tracks running natively on the DC. It&#x27;s still a work in progress, but it already boots, plays full races and has been tested on real hardware through GDemu.&lt;/p&gt;
 &lt;p&gt;The arcade runs on Midway&#x27;s V-Unit board, built around a TMS320C31 DSP and a custom polygon chip, so there&#x27;s no ready-made path to the Dreamcast. The source code for the game was made public and I used it as a map, but rather than rewriting the game, the C31 machine code was first translated into C, which was then compiled for the Dreamcast&#x27;s SH-4 with KallistiOS. The hottest routines (vertex transforms, polygon submission, object scanning) are rewritten by hand as native code. The V-Unit&#x27;s polygon packets are converted on the fly into PowerVR polygons, and the DCS sound is pre-rendered into samples that play on the AICA. Everything is checked against a reference interpreter and against MAME, frame by frame where needed.&lt;/p&gt;
 &lt;p&gt;So yes, this was all a pain in the ass and turned out to be much more time-consuming than I initially thought, despite the source code being available, because the hardware used on the original arcade and the one inside our favourite white box are vastly different.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/cruisn-usa-dc-attract.png&quot; alt=&quot;Cruis&#x27;n USA on the Dreamcast: the attract mode with the game&#x27;s logo over a tree-lined avenue, a purple and a blue car ahead and a red Corvette alongside.&quot; width=&quot;640&quot; height=&quot;480&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
 &lt;p&gt;Some of the problems found along the way, and how they were solved:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Floating point:&lt;/strong&gt; the C31 uses its own float format. Every value has to be converted to and from IEEE, thousands of times per frame. A bit-exact fast path, verified against all 4 billion possible values, gave a 6.6% speed-up on its own.&lt;/li&gt;
@@ -26,6 +29,9 @@
   &lt;li&gt;&lt;strong&gt;Real PowerVR vs emulators:&lt;/strong&gt; issues that Flycast and Redream don&#x27;t show (stray lines on distant cars, polygon list overflows) were tracked down with diagnostic builds on real consoles. Still needs fixes, though.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Textures:&lt;/strong&gt; the arcade&#x27;s 8-bit paletted texture pages are converted to ARGB1555 and cached in VRAM, with large textures stored at half resolution to fit.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/cruisn-usa-dc-choose-car.png&quot; alt=&quot;Cruis&#x27;n USA on the Dreamcast: the Choose Car screen in a garage, showing the Devastator V1&#x27;s stats and the prompt &#x27;Press X for hidden cars!&#x27;.&quot; width=&quot;640&quot; height=&quot;480&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
 &lt;p&gt;On the other hand, some extras for this port are:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;No RAM/ROM check or Midway/Nintendo weird-looking loading screen: new, cleaner, faster custom loading screen with the game&#x27;s logo.&lt;/li&gt;

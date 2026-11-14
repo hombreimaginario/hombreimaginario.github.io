@@ -57,6 +57,8 @@
     "platforms": [
       "dreamcast"
     ],
-    "project": "cruisn-usa"
+    "project": "cruisn-usa",
+    "cover": "/img/2026/cruisn-usa-dc-redwoods.png",
+    "cover_alt": "Cruis'n USA on the Dreamcast: a red sports car drives off-road past tree stumps towards a redwood forest, in 10th place."
   }
 ]
