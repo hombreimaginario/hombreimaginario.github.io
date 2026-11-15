@@ -98,5 +98,15 @@
     "cover": "/img/2026/shadow-warrior-dc-flash-bomb.png",
     "cover_pixel": true,
     "cover_alt": "Shadow Warrior on the Dreamcast: Lo Wang holds a minigun in a wooden building as a Flash Bomb pickup message appears on screen."
+  },
+  {
+    "slug": "karnov-md-first-weeks",
+    "date": "2026-11-10",
+    "title": "Karnov MD: the simpler one?",
+    "summary": "A new binary port to the Mega Drive: Data East's Karnov, chosen because it looked easier than Tiger Road. Two weeks in, here's where it stands.",
+    "platforms": [
+      "mega-drive"
+    ],
+    "project": "karnov"
   }
 ]
