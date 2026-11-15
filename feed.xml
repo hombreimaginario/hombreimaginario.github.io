@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-15T11:38:23Z</updated>
+<updated>2026-11-15T11:51:45Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Cruis&#x27;n USA DC: Arcade Edition</title>
@@ -13,13 +13,13 @@
 <id>https://hombreimaginario.com/posts/cruisn-usa-dc-arcade-edition/</id>
 <published>2026-11-05T12:00:00Z</published>
 <updated>2026-11-05T12:00:00Z</updated>
-<summary>Almost there: the arcade Cruis&#x27;n USA running natively on the Dreamcast, now at full arcade speed on real hardware.</summary><category term="dreamcast"/>
+<summary>Almost there: the arcade Cruis&#x27;n USA running natively on the Dreamcast, now at full arcade speed on real hardware. Here&#x27;s what it adds over the original.</summary><category term="dreamcast"/>
 <content type="html">&lt;p&gt;Friendly reminder that &lt;em&gt;Cruis&#x27;n USA: Arcade Edition&lt;/em&gt; is almost ready and I&#x27;m focusing now on tweaks, polishing and little performance optimizations.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://hombreimaginario.com/posts/cruisn-usa-dc-first-days/&quot;&gt;As mentioned before&lt;/a&gt;, this is not a port of the N64 release, nor does it emulate the arcade; instead, it translates the Midway V-Unit program from its released source code into native DC code and replaces its video and sound hardware with the Dreamcast&#x27;s PowerVR and AICA.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hombreimaginario.com/posts/cruisn-usa-dc-first-days/&quot;&gt;As mentioned&lt;/a&gt;, this is not a port of the N64 release, nor does it emulate the arcade; instead, it translates the Midway V-Unit program from its released source code into native DC code and replaces its video and sound hardware with the Dreamcast&#x27;s PowerVR and AICA.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&quot;https://hombreimaginario.com/img/2026/cruisn-usa-dc-appalachia.png&quot; alt=&quot;Cruis&#x27;n USA on the Dreamcast: a silver sports car heads towards a stone arch bridge between rocky cuttings in the Appalachia stage.&quot; width=&quot;640&quot; height=&quot;480&quot; loading=&quot;lazy&quot;&gt;
 &lt;/figure&gt;
-&lt;p&gt;Compared with the original arcade it adds Dreamcast controller support (analog stick or d-pad, triggers for gas and brake, and manual shifting on the d-pad), free play (no coins, no limited continues), pause with START during a race (the music keeps playing), high scores and settings saved to the VMU, the Midway logo on the VMU screen during attract mode, and controller vibration.&lt;/p&gt;
+&lt;p&gt;Compared with the original arcade, naturally it adds Dreamcast controller support (analog stick or d-pad, triggers for gas and brake, and manual shifting on the d-pad), free play (no coins, no limited continues), pause with START during a race (the music keeps playing), high scores and settings saved to the VMU, the Midway logo on the VMU screen during attract mode, and controller vibration.&lt;/p&gt;
 &lt;p&gt;The hidden cars and tracks, which needed button combinations on the cabinet, are toggled with X and an on-screen prompt. Distant objects also fade in instead of popping up, and attract mode picks tracks at random (the original arcade would always feature the same demo tracks in the same order).&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&quot;https://hombreimaginario.com/img/2026/cruisn-usa-dc-grand-canyon.png&quot; alt=&quot;Cruis&#x27;n USA on the Dreamcast: a bronze sports car takes a curve between the red cliffs of the Grand Canyon stage.&quot; width=&quot;640&quot; height=&quot;480&quot; loading=&quot;lazy&quot;&gt;
