@@ -5,8 +5,23 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-14T21:12:43Z</updated>
+<updated>2026-11-15T11:19:16Z</updated>
 <author><name>hombreimaginario</name></author>
+<entry>
+<title>Cruis&#x27;n USA DC: Arcade Edition</title>
+<link href="https://hombreimaginario.com/posts/cruisn-usa-dc-arcade-edition/"/>
+<id>https://hombreimaginario.com/posts/cruisn-usa-dc-arcade-edition/</id>
+<published>2026-11-05T12:00:00Z</published>
+<updated>2026-11-05T12:00:00Z</updated>
+<summary>The Dreamcast port of the arcade Cruis&#x27;n USA is almost ready: full arcade speed on real hardware, Dreamcast controls and VMU support, hidden cars and tracks on a button, and the last round of polish.</summary><category term="dreamcast"/>
+<content type="html">&lt;p&gt;Friendly reminder that &lt;em&gt;Cruis&#x27;n USA: Arcade Edition&lt;/em&gt; is almost ready and I&#x27;m focusing now on tweaks, polishing and little performance optimizations.&lt;/p&gt;
+&lt;p&gt;This port does not emulate the arcade or the N64 version: it translates the original Midway V-Unit program from its released source code into native DC code and replaces its video and sound hardware with the Dreamcast&#x27;s PowerVR and AICA.&lt;/p&gt;
+&lt;p&gt;Compared with the original arcade it adds Dreamcast controller support (analog stick or d-pad, triggers for gas and brake, and manual shifting on the d-pad), free play (no coins, no limited continues), pause with START during a race (the music keeps playing), high scores and settings saved to the VMU, the Midway logo on the VMU screen during attract mode, and controller vibration.&lt;/p&gt;
+&lt;p&gt;The hidden cars and tracks, which needed button combinations on the cabinet, are toggled with X and an on-screen prompt. Distant objects also fade in instead of popping up, and attract mode picks tracks at random (the original arcade would always feature the same demo tracks in the same order).&lt;/p&gt;
+&lt;p&gt;Over the last few weeks the work has focused on real hardware performance. Races now run at full arcade speed, and crashes into lamp posts, trees and cars still behave like the original even though the game moves further each frame. Iowa no longer reads from the CD nonstop (which was a problem during the first weeks of this project), several black screens have been fixed (after the high score table and when entering initials), and black lines and other artifacts have been virtually eradicated.&lt;/p&gt;
+&lt;p&gt;There is also a new &quot;Arcade Edition&quot; loading/logo screen with the build number, a GDEMU cover, and a number of rendering and code optimizations that make the game somewhat lighter.&lt;/p&gt;
+&lt;p&gt;Coming soon to a GitHub near you!&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>Shadow Warrior DC: two weeks in</title>
 <link href="https://hombreimaginario.com/posts/shadow-warrior-dc-two-weeks/"/>

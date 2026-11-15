@@ -73,5 +73,15 @@
     "cover": "/img/2026/shadow-warrior-dc-boat.png",
     "cover_pixel": true,
     "cover_alt": "Shadow Warrior on the Dreamcast: Lo Wang holds a katana on a wooden boat crossing water between rock walls, a medkit at his feet."
+  },
+  {
+    "slug": "cruisn-usa-dc-arcade-edition",
+    "date": "2026-11-05",
+    "title": "Cruis'n USA DC: Arcade Edition",
+    "summary": "The Dreamcast port of the arcade Cruis'n USA is almost ready: full arcade speed on real hardware, Dreamcast controls and VMU support, hidden cars and tracks on a button, and the last round of polish.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "cruisn-usa"
   }
 ]
