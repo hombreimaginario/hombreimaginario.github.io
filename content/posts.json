@@ -103,10 +103,13 @@
     "slug": "karnov-md-first-weeks",
     "date": "2026-11-10",
     "title": "Karnov MD: the simpler one?",
-    "summary": "A new binary port to the Mega Drive: Data East's Karnov, chosen because it looked easier than Tiger Road. Two weeks in, here's where it stands.",
+    "summary": "Partly out of curiosity, partly because it looked easier to adapt than Tiger Road, and partly because an unofficial Neo Geo version exists, a few days ago I started porting Data East's Karnov to the Mega Drive. Here's where it stands.",
     "platforms": [
       "mega-drive"
     ],
-    "project": "karnov"
+    "project": "karnov",
+    "cover": "/img/2026/karnov-md-title.png",
+    "cover_pixel": true,
+    "cover_alt": "Karnov on the Mega Drive: the title screen, with the golden Karnov logo between two stone dragons and a difficulty selector (Easy, Normal, Hard, Very Hard)."
   }
 ]
