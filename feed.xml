@@ -5,8 +5,32 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-15T11:54:49Z</updated>
+<updated>2026-11-15T14:59:36Z</updated>
 <author><name>hombreimaginario</name></author>
+<entry>
+<title>Shadow Warrior DC: 30th Anniversary Edition</title>
+<link href="https://hombreimaginario.com/posts/shadow-warrior-dc-30th-anniversary-edition/"/>
+<id>https://hombreimaginario.com/posts/shadow-warrior-dc-30th-anniversary-edition/</id>
+<published>2026-11-10T12:00:00Z</published>
+<updated>2026-11-10T12:00:00Z</updated>
+<summary>The Dreamcast port of Shadow Warrior becomes the 30th Anniversary Edition: both official expansions built in, a new start-up screen, fewer disc reads during play and a new Performance Mode.</summary><category term="dreamcast"/>
+<content type="html">&lt;p&gt;After what feels like a hundred more test builds... We&#x27;re almost done!&lt;/p&gt;
+&lt;p&gt;It’s been a busy ten days for the &lt;strong&gt;Shadow Warrior&lt;/strong&gt; Dreamcast port, now renamed &lt;strong&gt;30th Anniversary Edition&lt;/strong&gt;, because why the hell not.&lt;/p&gt;
+&lt;p&gt;The two official expansions, &lt;strong&gt;Twin Dragon&lt;/strong&gt; and &lt;strong&gt;Wanton Destruction&lt;/strong&gt;, are now fully integrated in the port, making it sort of a trilogy instead of a single game. Hence, &quot;New Game&quot; lists both original episodes alongside the two add-ons, and switching between them restarts quickly from a copy of the program kept in video RAM (as opposed to the original PC releases which actually had to completely reboot the game to load the expansions!). The menu picture stays on screen while it switches. &quot;Load Game&quot; has one save slot per game, and loading a save from another game switches to that game first.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/shadow-warrior-dc-gate.png&quot; alt=&quot;Shadow Warrior on the Dreamcast: Lo Wang holds a katana in front of a wooden gate with a round emblem, on a grassy courtyard.&quot; width=&quot;960&quot; height=&quot;720&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;The expansions also have their own credits pages, giving the original teams at Sunstorm Interactive, Level Infinity and Wylde Productions the credit they deserve (as far as I know, these credits were never there in the original PC releases). There is also a &lt;strong&gt;new start-up screen&lt;/strong&gt; for the 30th anniversary, with one of four backgrounds picked at random each time you switch the console on!&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/shadow-warrior-dc-30th-start.png&quot; alt=&quot;Shadow Warrior 30th Anniversary Edition start-up screen: an illustration of Lo Wang with a sword, the game&#x27;s logo, &#x27;Original game by 3D Realms&#x27;, &#x27;Dreamcast port by hombreimaginario&#x27; and a note that the expansions Twin Dragon and Wanton Destruction are included.&quot; width=&quot;640&quot; height=&quot;480&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;Under the hood, most of the work went into smoother play. Art and sounds that used to be read from the disc mid-level are now loaded up front or streamed in the background. Free video RAM keeps a second copy of graphics, so the game reads from the disc much less often while you play. The renderer got several speed-ups, especially in &lt;strong&gt;Performance Mode&lt;/strong&gt; (half-width 3D view), another new addition to this port.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img class=&quot;pixel&quot; src=&quot;https://hombreimaginario.com/img/2026/shadow-warrior-dc-medkit.png&quot; alt=&quot;Shadow Warrior on the Dreamcast: Lo Wang aims a minigun at an enemy in a doorway of a Japanese-style room, with a &#x27;MedKit +20&#x27; message on screen.&quot; width=&quot;960&quot; height=&quot;720&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;Smaller touches: on-screen prompts now name the pad’s A and B buttons, and the test build shows a live FPS counter for testers. Next up is measuring every level on real hardware.&lt;/p&gt;
+&lt;p&gt;So... &lt;em&gt;Who wants some Wang?&lt;/em&gt; 🥷&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>Cruis&#x27;n USA DC: Arcade Edition</title>
 <link href="https://hombreimaginario.com/posts/cruisn-usa-dc-arcade-edition/"/>

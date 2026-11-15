@@ -85,5 +85,18 @@
     "project": "cruisn-usa",
     "cover": "/img/2026/cruisn-usa-dc-la-freeway.png",
     "cover_alt": "Cruis'n USA on the Dreamcast: a bronze 1960s sports car kicks up dust on the grassy verge of the LA freeway, past palm trees and a hillside house."
+  },
+  {
+    "slug": "shadow-warrior-dc-30th-anniversary-edition",
+    "date": "2026-11-10",
+    "title": "Shadow Warrior DC: 30th Anniversary Edition",
+    "summary": "The Dreamcast port of Shadow Warrior becomes the 30th Anniversary Edition: both official expansions built in, a new start-up screen, fewer disc reads during play and a new Performance Mode.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "shadow-warrior",
+    "cover": "/img/2026/shadow-warrior-dc-flash-bomb.png",
+    "cover_pixel": true,
+    "cover_alt": "Shadow Warrior on the Dreamcast: Lo Wang holds a minigun in a wooden building as a Flash Bomb pickup message appears on screen."
   }
 ]
