@@ -144,10 +144,12 @@ def page(title, body, description=SITE_DESC, canonical="/", og_image=None, scrip
 <meta name="description" content="{e(description)}">
 <link rel="canonical" href="{SITE_URL}{canonical}">
 <meta property="og:site_name" content="{SITE_NAME}">
-<meta property="og:title" content="{e(title or SITE_NAME)}">
+<meta property="og:title" content="{e(title or SITE_NAME + " · " + SITE_SUB)}">
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{SITE_URL}{canonical}">{og_img}
 <meta name="twitter:card" content="{'summary_large_image' if og_image else 'summary'}">
+<meta name="twitter:site" content="@hombreimagina">
+<meta name="twitter:creator" content="@hombreimagina">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
