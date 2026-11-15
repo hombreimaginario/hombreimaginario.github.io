@@ -28,6 +28,7 @@ SITE_NAME = "hombreimaginario"
 SITE_SUB = "retro works"
 SITE_DESC = "Retro game ports and other retro works by hombreimaginario."
 HOME_LIMIT = 10
+SOCIAL_CARD = "/img/social-card.png"  # preview image for pages without a cover; made by tools/make_card.py
 
 # Order here is the order of the filter buttons.
 PLATFORMS = {
@@ -133,7 +134,9 @@ def filters():
 
 def page(title, body, description=SITE_DESC, canonical="/", og_image=None, scripts=False, extra_head=""):
     full_title = f"{title} · {SITE_NAME}" if title else f"{SITE_NAME} · {SITE_SUB}"
-    og_img = f'\n<meta property="og:image" content="{SITE_URL}{e(og_image)}">' if og_image else ""
+    og_image = og_image or SOCIAL_CARD
+    og_img = f'\n<meta property="og:image" content="{SITE_URL}{e(og_image)}">'
+    og_img += '\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">' if og_image == SOCIAL_CARD else ""
     script = '\n<script src="/assets/js/filter.js" defer></script>' if scripts else ""
     return f"""<!doctype html>
 <html lang="en">
