@@ -78,10 +78,12 @@
     "slug": "cruisn-usa-dc-arcade-edition",
     "date": "2026-11-05",
     "title": "Cruis'n USA DC: Arcade Edition",
-    "summary": "The Dreamcast port of the arcade Cruis'n USA is almost ready: full arcade speed on real hardware, Dreamcast controls and VMU support, hidden cars and tracks on a button, and the last round of polish.",
+    "summary": "Almost there: the arcade Cruis'n USA running natively on the Dreamcast, now at full arcade speed on real hardware.",
     "platforms": [
       "dreamcast"
     ],
-    "project": "cruisn-usa"
+    "project": "cruisn-usa",
+    "cover": "/img/2026/cruisn-usa-dc-la-freeway.png",
+    "cover_alt": "Cruis'n USA on the Dreamcast: a bronze 1960s sports car kicks up dust on the grassy verge of the LA freeway, past palm trees and a hillside house."
   }
 ]

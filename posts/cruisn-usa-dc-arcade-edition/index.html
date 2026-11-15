@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cruis&#x27;n USA DC: Arcade Edition · hombreimaginario</title>
-<meta name="description" content="The Dreamcast port of the arcade Cruis&#x27;n USA is almost ready: full arcade speed on real hardware, Dreamcast controls and VMU support, hidden cars and tracks on a button, and the last round of polish.">
+<meta name="description" content="Almost there: the arcade Cruis&#x27;n USA running natively on the Dreamcast, now at full arcade speed on real hardware.">
 <link rel="canonical" href="https://hombreimaginario.com/posts/cruisn-usa-dc-arcade-edition/">
 <meta property="og:site_name" content="hombreimaginario">
 <meta property="og:title" content="Cruis&#x27;n USA DC: Arcade Edition">
-<meta property="og:description" content="The Dreamcast port of the arcade Cruis&#x27;n USA is almost ready: full arcade speed on real hardware, Dreamcast controls and VMU support, hidden cars and tracks on a button, and the last round of polish.">
+<meta property="og:description" content="Almost there: the arcade Cruis&#x27;n USA running natively on the Dreamcast, now at full arcade speed on real hardware.">
 <meta property="og:url" content="https://hombreimaginario.com/posts/cruisn-usa-dc-arcade-edition/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://hombreimaginario.com/img/2026/cruisn-usa-dc-la-freeway.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -42,18 +43,31 @@
 <div class="meta">
 <time datetime="2026-11-05">2026-11-05</time>
 <span class="tags">dreamcast · #cruisn-usa</span>
-<span>1 min read</span>
+<span>2 min read</span>
 </div>
 <h1>Cruis&#x27;n USA DC: Arcade Edition</h1>
 </header>
 <div class="prose">
+<figure class="cover">
+  <img src="/img/2026/cruisn-usa-dc-la-freeway.png" alt="Cruis&#x27;n USA on the Dreamcast: a bronze 1960s sports car kicks up dust on the grassy verge of the LA freeway, past palm trees and a hillside house.">
+</figure>
 <p>Friendly reminder that <em>Cruis'n USA: Arcade Edition</em> is almost ready and I'm focusing now on tweaks, polishing and little performance optimizations.</p>
-<p>This port does not emulate the arcade or the N64 version: it translates the original Midway V-Unit program from its released source code into native DC code and replaces its video and sound hardware with the Dreamcast's PowerVR and AICA.</p>
+<p><a href="/posts/cruisn-usa-dc-first-days/">As mentioned before</a>, this is not a port of the N64 release, nor does it emulate the arcade; instead, it translates the Midway V-Unit program from its released source code into native DC code and replaces its video and sound hardware with the Dreamcast's PowerVR and AICA.</p>
+<figure>
+  <img src="/img/2026/cruisn-usa-dc-appalachia.png" alt="Cruis'n USA on the Dreamcast: a silver sports car heads towards a stone arch bridge between rocky cuttings in the Appalachia stage." width="640" height="480" loading="lazy">
+</figure>
 <p>Compared with the original arcade it adds Dreamcast controller support (analog stick or d-pad, triggers for gas and brake, and manual shifting on the d-pad), free play (no coins, no limited continues), pause with START during a race (the music keeps playing), high scores and settings saved to the VMU, the Midway logo on the VMU screen during attract mode, and controller vibration.</p>
 <p>The hidden cars and tracks, which needed button combinations on the cabinet, are toggled with X and an on-screen prompt. Distant objects also fade in instead of popping up, and attract mode picks tracks at random (the original arcade would always feature the same demo tracks in the same order).</p>
+<figure>
+  <img src="/img/2026/cruisn-usa-dc-grand-canyon.png" alt="Cruis'n USA on the Dreamcast: a bronze sports car takes a curve between the red cliffs of the Grand Canyon stage." width="640" height="480" loading="lazy">
+</figure>
 <p>Over the last few weeks the work has focused on real hardware performance. Races now run at full arcade speed, and crashes into lamp posts, trees and cars still behave like the original even though the game moves further each frame. Iowa no longer reads from the CD nonstop (which was a problem during the first weeks of this project), several black screens have been fixed (after the high score table and when entering initials), and black lines and other artifacts have been virtually eradicated.</p>
+<figure>
+  <img src="/img/2026/cruisn-usa-dc-death-valley.png" alt="Cruis'n USA on the Dreamcast: a silver sports car on the dusty edge of a desert road in Death Valley, mountains behind." width="640" height="480" loading="lazy">
+</figure>
 <p>There is also a new "Arcade Edition" loading/logo screen with the build number, a GDEMU cover, and a number of rendering and code optimizations that make the game somewhat lighter.</p>
-<p>Coming soon to a GitHub near you!</p>
+<p>Coming soon to a <a href="https://github.com/hombreimaginario">GitHub</a> near you!</p>
+<p>You can follow me on <a href="https://x.com/hombreimagina">X</a> for more updates.</p>
 </div>
 </article>
 <nav class="post-nav" aria-label="More posts">
