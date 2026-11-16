@@ -52,7 +52,7 @@
 <h1>Tiger Road MD: two weeks of polish</h1>
 </header>
 <div class="prose">
-<p>Two weeks after the <a href="/posts/tiger-road-md-day-one/">first post</a>, the Mega Drive port of <em>Tiger Road</em> plays from start to finish, and most of the work has gone into making it look and sound like the arcade on a console with far fewer colours and sprites to spare.</p>
+<p>Two weeks after the <a href="/posts/tiger-road-md-day-one/">first post</a>, most of the work on the Mega Drive port of <em>Tiger Road</em> has gone into making it look and sound like the arcade on a console with far fewer colours and sprites to spare.</p>
 <p>Some of the problems found along the way, and how they were solved:</p>
 <ul>
   <li><strong>Colours:</strong> the arcade's palettes don't fit in the Mega Drive's four lines of 16 colours, and choosing them on the fly made things change tone mid-level: brown snake heads that should be green, a grey waterfall, enemies turning pale when they came back. Background colours are now worked out in advance for each stretch of rooms when the ROM is built, and each room has a fixed palette for its main enemies, so everything looks the same every time you see it.</li>

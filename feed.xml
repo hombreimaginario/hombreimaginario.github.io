@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-16T19:47:04Z</updated>
+<updated>2026-11-16T19:47:13Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
@@ -143,7 +143,7 @@
 <published>2026-10-17T12:00:00Z</published>
 <updated>2026-10-17T12:00:00Z</updated>
 <summary>Two weeks after the first post, the Mega Drive port of Tiger Road has steadier colours, fewer flickering sprites, better sound on real hardware and a proper attract mode.</summary><category term="mega-drive"/>
-<content type="html">&lt;p&gt;Two weeks after the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;first post&lt;/a&gt;, the Mega Drive port of &lt;em&gt;Tiger Road&lt;/em&gt; plays from start to finish, and most of the work has gone into making it look and sound like the arcade on a console with far fewer colours and sprites to spare.&lt;/p&gt;
+<content type="html">&lt;p&gt;Two weeks after the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;first post&lt;/a&gt;, most of the work on the Mega Drive port of &lt;em&gt;Tiger Road&lt;/em&gt; has gone into making it look and sound like the arcade on a console with far fewer colours and sprites to spare.&lt;/p&gt;
 &lt;p&gt;Some of the problems found along the way, and how they were solved:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Colours:&lt;/strong&gt; the arcade&#x27;s palettes don&#x27;t fit in the Mega Drive&#x27;s four lines of 16 colours, and choosing them on the fly made things change tone mid-level: brown snake heads that should be green, a grey waterfall, enemies turning pale when they came back. Background colours are now worked out in advance for each stretch of rooms when the ROM is built, and each room has a fixed palette for its main enemies, so everything looks the same every time you see it.&lt;/li&gt;
