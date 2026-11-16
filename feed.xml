@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-16T00:03:43Z</updated>
+<updated>2026-11-16T19:47:04Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
@@ -135,6 +135,23 @@
 &lt;/ul&gt;
 &lt;p&gt;Current status: races run mostly at 28.5 fps, the same rate as the arcade, with drops to 19 fps in the busiest scenes. The attract demo is still heavier, and performance work continues. Feedback from people testing on real hardware has been invaluable so far, so comments and testing reports are very welcome.&lt;/p&gt;
 &lt;p&gt;More news soon!&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Tiger Road MD: two weeks of polish</title>
+<link href="https://hombreimaginario.com/posts/tiger-road-md-two-weeks/"/>
+<id>https://hombreimaginario.com/posts/tiger-road-md-two-weeks/</id>
+<published>2026-10-17T12:00:00Z</published>
+<updated>2026-10-17T12:00:00Z</updated>
+<summary>Two weeks after the first post, the Mega Drive port of Tiger Road has steadier colours, fewer flickering sprites, better sound on real hardware and a proper attract mode.</summary><category term="mega-drive"/>
+<content type="html">&lt;p&gt;Two weeks after the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;first post&lt;/a&gt;, the Mega Drive port of &lt;em&gt;Tiger Road&lt;/em&gt; plays from start to finish, and most of the work has gone into making it look and sound like the arcade on a console with far fewer colours and sprites to spare.&lt;/p&gt;
+&lt;p&gt;Some of the problems found along the way, and how they were solved:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Colours:&lt;/strong&gt; the arcade&#x27;s palettes don&#x27;t fit in the Mega Drive&#x27;s four lines of 16 colours, and choosing them on the fly made things change tone mid-level: brown snake heads that should be green, a grey waterfall, enemies turning pale when they came back. Background colours are now worked out in advance for each stretch of rooms when the ROM is built, and each room has a fixed palette for its main enemies, so everything looks the same every time you see it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Too many sprites:&lt;/strong&gt; some scenes go over what the Mega Drive can show at once. Instead of pieces disappearing for good, sprites now take turns flickering; a larger cache stops the mid-boss in the statue room breaking up; no more than two kite men fly at the same time in level 3; and the spiked ceiling trap was rebuilt from 11 pieces in 10 sprites so its chains and door line up.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Background glitches:&lt;/strong&gt; pieces of floor from 32 rows further on, or blocks reused in the wrong place, showed up on the stairs of level 4. The background is now checked and redrawn continuously, and vertical scrolling is sent by DMA like horizontal scrolling.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sound:&lt;/strong&gt; the FM music was rebalanced against the effects and between tracks, effects that played an octave too low (you couldn&#x27;t hear the footsteps on the stairs) were fixed, and the noise channel works. On a real console the sound processor sometimes started in the wrong state; it&#x27;s now set up properly at boot and watched in case it stalls. The Japanese voices were added as a test and then taken out again, to keep the arcade&#x27;s music and effects untouched.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The presentation is closer to a finished game too: a difficulty selector on the title screen, like the AES version of the Neo Geo port, an attract mode that cycles through the legal notice, the demo (now with the level music) and the title screen, the logo and copyright fading in as in the arcade, a BETA VERSION label, and a start-up notice making clear this is a non-commercial fan project still in development.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>Cruis&#x27;n USA DC: the arcade, not the N64</title>

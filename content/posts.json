@@ -110,5 +110,15 @@
     "project": "karnov",
     "cover": "/img/2026/karnov-md-stage-climb.png",
     "cover_alt": "Karnov on the Mega Drive: Karnov stands among stone ruins between two tall buildings, with the item bar at the top of the screen."
+  },
+  {
+    "slug": "tiger-road-md-two-weeks",
+    "date": "2026-10-17",
+    "title": "Tiger Road MD: two weeks of polish",
+    "summary": "Two weeks after the first post, the Mega Drive port of Tiger Road has steadier colours, fewer flickering sprites, better sound on real hardware and a proper attract mode.",
+    "platforms": [
+      "mega-drive"
+    ],
+    "project": "tiger-road"
   }
 ]
