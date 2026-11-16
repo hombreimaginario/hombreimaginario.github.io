@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-15T23:49:38Z</updated>
+<updated>2026-11-16T00:03:43Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
@@ -45,7 +45,7 @@
 &lt;/figure&gt;
 &lt;p&gt;The first steps were analysis tools and a comparison of the different versions of the game, which ended with the Japanese one as the base. Soon the port was booting to the title screen and playing the first stage with its scrolling background. Then came the sprites and colours for each stage, the map screen between stages, a side-by-side comparison of all nine stages with the arcade, and finally the sound. Along the way, no more INSERT COIN, no more FREE PLAY label in the demo. In their place there’s a PRESS START prompt, a pause with its own PAUSE label, a difficulty selector on the title screen and a start-up notice with the build name.&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&quot;https://hombreimaginario.com/img/2026/karnov-md-stage-climb.png&quot; alt=&quot;Karnov on the Mega Drive: Karnov stands among stone ruins between two tall buildings, with the item bar at the top of the screen.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/karnov-md-title.png&quot; alt=&quot;Karnov on the Mega Drive: the title screen, with the golden Karnov logo between two stone dragons and a difficulty selector (Easy, Normal, Hard, Very Hard).&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
 &lt;/figure&gt;
 &lt;p&gt;The first builds had their share of bugs: black stripes on the background after dying, a GET READY message drawn in black, almost-black pieces left over the stage when switching to the map, half the frames going black during screen changes, music slowing down on the console whenever its Z80 was paused for DMA transfers, Karnov freezing at the start of a new stage, and pieces flickering on the map screen because too many sprites shared the same line. All of them are fixed now, and work continues on cutting dropped frames.&lt;/p&gt;</content>
 </entry>
