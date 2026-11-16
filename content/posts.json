@@ -131,6 +131,8 @@
     "platforms": [
       "mega-drive"
     ],
-    "project": "tiger-road"
+    "project": "tiger-road",
+    "cover": "/img/2026/tiger-road-md-twins.png",
+    "cover_alt": "Tiger Road on the Mega Drive: the hero, with an axe, faces two giant green-armoured twin bosses in front of painted warrior portraits."
   }
 ]
