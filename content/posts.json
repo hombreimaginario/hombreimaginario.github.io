@@ -119,6 +119,8 @@
     "platforms": [
       "mega-drive"
     ],
-    "project": "tiger-road"
+    "project": "tiger-road",
+    "cover": "/img/2026/tiger-road-md-horse.png",
+    "cover_alt": "Tiger Road on the Mega Drive: the hero rides a horse through a dark forest at night, with a stormy sky and distant mountains."
   }
 ]
