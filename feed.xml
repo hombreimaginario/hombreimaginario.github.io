@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-16T19:56:46Z</updated>
+<updated>2026-11-16T22:51:32Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
@@ -48,6 +48,18 @@
   &lt;img src=&quot;https://hombreimaginario.com/img/2026/karnov-md-title.png&quot; alt=&quot;Karnov on the Mega Drive: the title screen, with the golden Karnov logo between two stone dragons and a difficulty selector (Easy, Normal, Hard, Very Hard).&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
 &lt;/figure&gt;
 &lt;p&gt;The first builds had their share of bugs: black stripes on the background after dying, a GET READY message drawn in black, almost-black pieces left over the stage when switching to the map, half the frames going black during screen changes, music slowing down on the console whenever its Z80 was paused for DMA transfers, Karnov freezing at the start of a new stage, and pieces flickering on the map screen because too many sprites shared the same line. All of them are fixed now, and work continues on cutting dropped frames.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Tiger Road MD: three languages and stereo</title>
+<link href="https://hombreimaginario.com/posts/tiger-road-md-languages-stereo/"/>
+<id>https://hombreimaginario.com/posts/tiger-road-md-languages-stereo/</id>
+<published>2026-11-06T12:00:00Z</published>
+<updated>2026-11-06T12:00:00Z</updated>
+<summary>The Mega Drive port of Tiger Road now speaks Japanese, corrected English and Spanish, plays its music in stereo, and makes a few cuts where the console can&#x27;t keep up with the arcade.</summary><category term="mega-drive"/>
+<content type="html">&lt;p&gt;The biggest addition in these weeks is a language selector at start-up. The arcade came out in Japan as &lt;em&gt;Tora-he no Michi&lt;/em&gt;, with Japanese text, and abroad as &lt;em&gt;Tiger Road&lt;/em&gt;, with an English translation full of typos. The port now offers both, plus a third option: &lt;strong&gt;Japanese&lt;/strong&gt;, recovering the arcade&#x27;s original texts, the routines that draw them and the Japanese logo; &lt;strong&gt;English&lt;/strong&gt;, with the original typos corrected; and a new &lt;strong&gt;Spanish&lt;/strong&gt; translation, covering the dialogues, the boss captions, the ending and the port&#x27;s own prompts (PULSA START, PAUSA, DIFICULTAD), with proper ¿ and ¡ characters.&lt;/p&gt;
+&lt;p&gt;The other novelty is in the sound: the arcade plays its music in mono, and the port now plays it in &lt;strong&gt;stereo&lt;/strong&gt;. For each of the game&#x27;s 23 tracks, a table spreads its six FM channels across the stereo field: the lowest and highest voices stay in the centre and the rest alternate between left and right, as in the &lt;a href=&quot;https://hombreimaginario.com/posts/karnov-md-first-weeks/&quot;&gt;Karnov&lt;/a&gt; port. Which voice is the low one and which the high one was measured in MAME, the Z80 sound driver applies the layout as each track starts, and fanfares keep the layout of the music that was playing. Sound effects, played on the PSG, stay in mono. On top of that, the volume of each track was measured at the Mega Drive&#x27;s output so that none of them sounds quieter than the rest.&lt;/p&gt;
+&lt;p&gt;Not everything can run as in the arcade, though. The Mega Drive can&#x27;t move as many sprites as the original board at the same speed, so some decisions had to be made to keep the game fluid: only one kite man at a time in level 3 (which brought dropped frames in that part of the demo down from almost 29% to around 3%), no more than two dragons, rope climbers and village brutes one at a time, at most two spearmen at the lake and three fat men in the brothers&#x27; courtyard. The golden statue mid-boss lost its shadows, its smallest pieces and some of its flames, the village doors are now part of the background instead of sprites, and the attract mode only uses the four lightest demos.&lt;/p&gt;
+&lt;p&gt;The ending is also in place, with its Spanish texts, although the children&#x27;s climb and celebration are shown as still images, since the full animation went over the Mega Drive&#x27;s limit of sprites per line.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>Cruis&#x27;n USA DC: Arcade Edition</title>

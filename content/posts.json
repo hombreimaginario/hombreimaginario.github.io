@@ -122,5 +122,15 @@
     "project": "tiger-road",
     "cover": "/img/2026/tiger-road-md-horse.png",
     "cover_alt": "Tiger Road on the Mega Drive: the hero rides a horse through a dark forest at night, with a stormy sky and distant mountains."
+  },
+  {
+    "slug": "tiger-road-md-languages-stereo",
+    "date": "2026-11-06",
+    "title": "Tiger Road MD: three languages and stereo",
+    "summary": "The Mega Drive port of Tiger Road now speaks Japanese, corrected English and Spanish, plays its music in stereo, and makes a few cuts where the console can't keep up with the arcade.",
+    "platforms": [
+      "mega-drive"
+    ],
+    "project": "tiger-road"
   }
 ]
