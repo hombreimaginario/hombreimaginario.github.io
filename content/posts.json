@@ -151,8 +151,8 @@
   {
     "slug": "tiger-road-md-v1-2",
     "date": "2026-11-17",
-    "title": "Tiger Road MD: bug hunting up to V1.2",
-    "summary": "Ten days of testing on a real Mega Drive: the golden statues of level 2, the stone heads in the crocodile room and the bugs found along the way.",
+    "title": "Tiger Road MD: ten days of testing, up to V1.2",
+    "summary": "Statues that froze the game, stone heads that slowed it down and a few smaller bugs from my latest tests on a real Mega Drive.",
     "platforms": [
       "mega-drive"
     ],
