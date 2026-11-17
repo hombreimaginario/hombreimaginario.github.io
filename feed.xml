@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-17T22:07:17Z</updated>
+<updated>2026-11-17T22:07:24Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road MD: ten days of testing, up to V1.2</title>
@@ -13,7 +13,7 @@
 <id>https://hombreimaginario.com/posts/tiger-road-md-v1-2/</id>
 <published>2026-11-17T12:00:00Z</published>
 <updated>2026-11-17T12:00:00Z</updated>
-<summary>Statues that froze the game, stone heads that slowed it down and a few smaller bugs from my latest tests on a real Mega Drive.</summary><category term="mega-drive"/>
+<summary>My latest tests on a real Mega Drive: the golden statues in level 2 froze the game, and the stone heads in the crocodile room slowed it down.</summary><category term="mega-drive"/>
 <content type="html">&lt;p&gt;The last ten days have been almost all testing. I play each build on a real Mega Drive and in BlastEm, send save states and photos of anything odd, and the fix usually comes back the same day. The boot screen now shows a version number instead of a build date, and today it reads V1.2.&lt;/p&gt;
 &lt;p&gt;The level 2 mid-boss, the two golden statues, took four evenings. First the game froze completely: the music kept playing and nothing on screen moved. It was a trick to draw the standing statue in the background layer and save sprites, which got stuck in a loop. Then Wong started falling in slow motion during the fight, and when a statue jumped its lower half vanished, because the code hiding its upper arms was matching tile numbers that turned out to be its thighs. After the cuts, the right statue had no head and no attack and looked like something that hadn&#x27;t loaded, so it&#x27;s gone, painted over with wall. The trident statue no longer throws projectiles.&lt;/p&gt;
 &lt;p&gt;I also asked for a few trims. The skull room in level 2 allows two zombies at most, and the skulls breathe half as many fire particles, which took the frames where the game couldn&#x27;t rebuild its sprite list from 28.5% to almost zero. The green twins in level 5 flickered when they attacked on top of each other. Now the one on the left is always drawn in front, and the code that keeps them under the limit of 16 sprites per line was rewritten in assembly. The intro storm was too slow for its music and went from 584 frames to 472. The arcade does it in 353. The black screen after pressing START went from about 153 frames to 56.&lt;/p&gt;
