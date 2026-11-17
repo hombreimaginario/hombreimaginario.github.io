@@ -1,6 +1,22 @@
 <p>The plan was always to reuse everything learned while taking the original arcade apart for the <a href="/posts/tiger-road-md-day-one/">Mega Drive port</a> (memory maps, code, graphics, sound) to bring Capcom's classic to the Mega Drive's big sisters, the Saturn and the Dreamcast, this time without having to give anything up. Both projects started on the same day, less than two weeks after the Mega Drive one, and grew quickly as it moved forward, picking up its changes along the way: free play, pause, attract mode, the difficulty selector on the title screen.</p>
+<figure>
+  <img src="/img/2026/tiger-road-dc-default.png" alt="Tiger Road with black bands on both sides: the hero faces a hawk-carrying boss in a cave." width="598" height="448" loading="lazy">
+  <figcaption>Img 1. This is how Tiger Road looks by default on NG, SS and DC.</figcaption>
+</figure>
 <p>Each console needed a different approach. The Saturn has a chip from the 68000 family, the 68EC000 that normally drives its sound, so this is a binary port like the Mega Drive one: the arcade's program runs on it, and the two SH-2 processors do the rest. Sprites go through the VDP1 and backgrounds through the VDP2, and the result matches the arcade pixel by pixel: 305 captures across the five stages, with no differences other than the ones made on purpose. The weak point is the music. Generating the arcade's FM sound in real time would take more than four times the power of one SH-2, so the music plays from CD audio tracks, while the effects come from the arcade's own sound program running on the second SH-2.</p>
+<figure>
+  <img src="/img/2026/tiger-road-dc-fullscreen.png" alt="Tiger Road on the Dreamcast in full screen: the hero fights among bats in a ruined wooden building." width="598" height="448" loading="lazy">
+  <figcaption>Img 2. And this is what it looks like when you press Y to toggle full screen on the Dreamcast.</figcaption>
+</figure>
 <p>The Dreamcast has no 68000 at all, so here the whole arcade board is reproduced in C: the 68000, its Z80s and its two YM2203 sound chips, checked against MAME until the memory and the picture were identical over a 4,000-frame game. The SH-4 is fast enough to generate the FM sound exactly in real time, so music plays from CD tracks with the original FM as a fallback, and the PowerVR draws the picture. On top of that come a few Dreamcast touches, like a cover for the GDEMU menu and a logo on the VMU screen.</p>
+<figure>
+  <img src="/img/2026/tiger-road-ss-bezel1.png" alt="Tiger Road on the Saturn with a decorative bezel on the side bands: the hero fights two enemies by a lake." width="320" height="224" loading="lazy">
+  <figcaption>Img 3. Tiger Road on the Saturn, with bezel 1 on.</figcaption>
+</figure>
 <p>Then there's the screen. The arcade runs at 256×224, and the Mega Drive has a 256-pixel-wide mode, so the game fills the screen with nothing lost. The Saturn and the Dreamcast don't have that mode. On the Saturn, the picture sits in the centre of a 320×224 screen with black bands on both sides, which can be filled with bezels using L and R. On the Dreamcast, Y switches between square pixels (exactly double size, 512×448) and the arcade's original 4:3 shape (598×448), with a reminder on the map screen and the boss captions.</p>
+<figure>
+  <img src="/img/2026/tiger-road-ss-bezel2.png" alt="Tiger Road on the Saturn with an illustrated bezel on the side bands: the hero fights soldiers outside a temple gate in the first level." width="320" height="224" loading="lazy">
+  <figcaption>Img 4. Tiger Road on the Saturn, with bezel 2 on. This one looks particularly nice on CRT.</figcaption>
+</figure>
 <p>By early November both versions had caught up with the <a href="/posts/tiger-road-md-languages-stereo/">latest Mega Drive build</a>: three languages (Japanese with its original logo and dialogues, English with the typos corrected, and Spanish) and stereo music using the same layout. Only here it comes in full quality: each track was recorded channel by channel from the arcade's own sound and mixed in stereo into CD audio tracks.</p>
 <p><strong>And one very special detail:</strong> both versions also bring back the <strong>Japanese voices</strong>. It's a small thing, as there aren't that many of them, but they were never heard outside Japan: the chips that played them were removed from the Western board, and the Western program simply skips them. On the Saturn and the Dreamcast, Tiger Road finally gets its voice back, wherever you play it.</p>

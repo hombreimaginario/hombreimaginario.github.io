@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-17T10:36:30Z</updated>
+<updated>2026-11-17T11:27:52Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
@@ -57,9 +57,25 @@
 <updated>2026-11-07T12:00:00Z</updated>
 <summary>The plan was always to reuse the analysis and breakdown of the original arcade to bring Capcom&#x27;s classic to the Mega Drive&#x27;s big sisters, for a port with no compromises.</summary><category term="saturn"/><category term="dreamcast"/>
 <content type="html">&lt;p&gt;The plan was always to reuse everything learned while taking the original arcade apart for the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-day-one/&quot;&gt;Mega Drive port&lt;/a&gt; (memory maps, code, graphics, sound) to bring Capcom&#x27;s classic to the Mega Drive&#x27;s big sisters, the Saturn and the Dreamcast, this time without having to give anything up. Both projects started on the same day, less than two weeks after the Mega Drive one, and grew quickly as it moved forward, picking up its changes along the way: free play, pause, attract mode, the difficulty selector on the title screen.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-dc-default.png&quot; alt=&quot;Tiger Road with black bands on both sides: the hero faces a hawk-carrying boss in a cave.&quot; width=&quot;598&quot; height=&quot;448&quot; loading=&quot;lazy&quot;&gt;
+  &lt;figcaption&gt;Img 1. This is how Tiger Road looks by default on NG, SS and DC.&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Each console needed a different approach. The Saturn has a chip from the 68000 family, the 68EC000 that normally drives its sound, so this is a binary port like the Mega Drive one: the arcade&#x27;s program runs on it, and the two SH-2 processors do the rest. Sprites go through the VDP1 and backgrounds through the VDP2, and the result matches the arcade pixel by pixel: 305 captures across the five stages, with no differences other than the ones made on purpose. The weak point is the music. Generating the arcade&#x27;s FM sound in real time would take more than four times the power of one SH-2, so the music plays from CD audio tracks, while the effects come from the arcade&#x27;s own sound program running on the second SH-2.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-dc-fullscreen.png&quot; alt=&quot;Tiger Road on the Dreamcast in full screen: the hero fights among bats in a ruined wooden building.&quot; width=&quot;598&quot; height=&quot;448&quot; loading=&quot;lazy&quot;&gt;
+  &lt;figcaption&gt;Img 2. And this is what it looks like when you press Y to toggle full screen on the Dreamcast.&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;The Dreamcast has no 68000 at all, so here the whole arcade board is reproduced in C: the 68000, its Z80s and its two YM2203 sound chips, checked against MAME until the memory and the picture were identical over a 4,000-frame game. The SH-4 is fast enough to generate the FM sound exactly in real time, so music plays from CD tracks with the original FM as a fallback, and the PowerVR draws the picture. On top of that come a few Dreamcast touches, like a cover for the GDEMU menu and a logo on the VMU screen.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-bezel1.png&quot; alt=&quot;Tiger Road on the Saturn with a decorative bezel on the side bands: the hero fights two enemies by a lake.&quot; width=&quot;320&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+  &lt;figcaption&gt;Img 3. Tiger Road on the Saturn, with bezel 1 on.&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Then there&#x27;s the screen. The arcade runs at 256×224, and the Mega Drive has a 256-pixel-wide mode, so the game fills the screen with nothing lost. The Saturn and the Dreamcast don&#x27;t have that mode. On the Saturn, the picture sits in the centre of a 320×224 screen with black bands on both sides, which can be filled with bezels using L and R. On the Dreamcast, Y switches between square pixels (exactly double size, 512×448) and the arcade&#x27;s original 4:3 shape (598×448), with a reminder on the map screen and the boss captions.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-bezel2.png&quot; alt=&quot;Tiger Road on the Saturn with an illustrated bezel on the side bands: the hero fights soldiers outside a temple gate in the first level.&quot; width=&quot;320&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+  &lt;figcaption&gt;Img 4. Tiger Road on the Saturn, with bezel 2 on. This one looks particularly nice on CRT.&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;By early November both versions had caught up with the &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-languages-stereo/&quot;&gt;latest Mega Drive build&lt;/a&gt;: three languages (Japanese with its original logo and dialogues, English with the typos corrected, and Spanish) and stereo music using the same layout. Only here it comes in full quality: each track was recorded channel by channel from the arcade&#x27;s own sound and mixed in stereo into CD audio tracks.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;And one very special detail:&lt;/strong&gt; both versions also bring back the &lt;strong&gt;Japanese voices&lt;/strong&gt;. It&#x27;s a small thing, as there aren&#x27;t that many of them, but they were never heard outside Japan: the chips that played them were removed from the Western board, and the Western program simply skips them. On the Saturn and the Dreamcast, Tiger Road finally gets its voice back, wherever you play it.&lt;/p&gt;</content>
 </entry>
