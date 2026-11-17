@@ -11,7 +11,7 @@
 <p>The other bugs from the last few days, and what caused them:</p>
 <ul>
   <li>After beating Fudo, Wong walked out in front of the wall instead of behind it. The TIME COUNT text switched the foreground layer to text mode. Short texts like that one are now drawn with sprites.</li>
-  <li>Crossing some doors in level 4 showed squares with graphics from other rooms. The tile cache ran out of space and freed blocks that were still on screen. In that case the new room now keeps the colours of the previous one until the next cut. For a moment the colours are wrong, and I'll take that over broken graphics.</li>
+  <li>Crossing some doors in level 4 showed squares with graphics from other rooms. The tile cache ran out of space and freed blocks that were still on screen. In that case the new room now gets the colours that are still available, which may not be as faithful to the arcade but I'll take that over broken graphics.</li>
   <li>The lives counter disappeared in the crocodile room. The bottom lines had too many sprites, and the lives were last in the list. They go first now.</li>
   <li>The flag of the level 4 boss was greyish green instead of yellow and brown, because that stretch of the level shares palettes. Changing four colours fixed it.</li>
   <li>Before the map after that boss, the arcade shows a mosaic of bits of rooms while it switches banks. It seems the arcade does it that way, but it definitely looks like an error to me, so I prefer a black screen there.</li>

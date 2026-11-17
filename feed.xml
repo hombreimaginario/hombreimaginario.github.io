@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-17T22:39:36Z</updated>
+<updated>2026-11-17T22:51:50Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road MD: ten days of testing, up to V1.2</title>
@@ -27,7 +27,7 @@
 &lt;p&gt;The other bugs from the last few days, and what caused them:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;After beating Fudo, Wong walked out in front of the wall instead of behind it. The TIME COUNT text switched the foreground layer to text mode. Short texts like that one are now drawn with sprites.&lt;/li&gt;
-  &lt;li&gt;Crossing some doors in level 4 showed squares with graphics from other rooms. The tile cache ran out of space and freed blocks that were still on screen. In that case the new room now keeps the colours of the previous one until the next cut. For a moment the colours are wrong, and I&#x27;ll take that over broken graphics.&lt;/li&gt;
+  &lt;li&gt;Crossing some doors in level 4 showed squares with graphics from other rooms. The tile cache ran out of space and freed blocks that were still on screen. In that case the new room now gets the colours that are still available, which may not be as faithful to the arcade but I&#x27;ll take that over broken graphics.&lt;/li&gt;
   &lt;li&gt;The lives counter disappeared in the crocodile room. The bottom lines had too many sprites, and the lives were last in the list. They go first now.&lt;/li&gt;
   &lt;li&gt;The flag of the level 4 boss was greyish green instead of yellow and brown, because that stretch of the level shares palettes. Changing four colours fixed it.&lt;/li&gt;
   &lt;li&gt;Before the map after that boss, the arcade shows a mosaic of bits of rooms while it switches banks. It seems the arcade does it that way, but it definitely looks like an error to me, so I prefer a black screen there.&lt;/li&gt;
