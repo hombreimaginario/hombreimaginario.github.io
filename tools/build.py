@@ -80,6 +80,14 @@ def url(p):
     return f"/posts/{p['slug']}/"
 
 
+def tags_links(p):
+    """Tags for a post page: each platform links to the archive filtered by it."""
+    parts = [f'<a href="/archive/#{e(x)}">{e(x)}</a>' for x in p["platforms"]]
+    if p.get("project"):
+        parts.append("#" + e(p["project"]))
+    return " · ".join(parts)
+
+
 def tags_line(p):
     parts = list(p["platforms"])
     if p.get("project"):
@@ -254,7 +262,7 @@ def build_post(p, newer, older):
         pixel = ' class="pixel"' if p.get("cover_pixel") else ''
         alt = e(p.get("cover_alt", p["title"]))
         cover_html = f'<figure class="cover">\n  <img{pixel} src="{e(p["cover"])}" alt="{alt}">\n</figure>\n'
-    tags = tags_line(p)
+    tags = tags_links(p)
     tags_html = f'<span class="tags">{tags}</span>' if tags else ""
     body = f"""{header(small=True)}
 <main id="main" style="display:flex;flex-direction:column;gap:44px">

@@ -156,6 +156,8 @@ img { max-width: 100%; height: auto; display: block; }
 .post-head { display: flex; flex-direction: column; gap: 14px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
 .meta { display: flex; gap: 16px; flex-wrap: wrap; font-family: var(--mono); font-size: 13px; color: var(--muted); }
 .meta .tags { font-size: 13px; }
+.meta .tags a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.meta .tags a:hover { color: var(--ink); }
 .post-head h1 { margin: 0; font-size: 40px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; }
 
 .prose { display: flex; flex-direction: column; gap: 22px; font-size: 18px; line-height: 1.7; color: var(--text); }
