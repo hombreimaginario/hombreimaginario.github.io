@@ -4,13 +4,29 @@
     "name": "Tiger Road",
     "original": "Capcom · 1987 · arcade",
     "description": "Capcom's action platformer set in medieval China, also known as Tora-he no Michi, ported from the original arcade ROM: a binary port on the Mega Drive, Neo Geo and Saturn, and a full reproduction of the arcade board on the Dreamcast. Japanese, English and Spanish text, and stereo music.",
-    "image": "/img/2026/tiger-road-lee-wong.webp",
-    "image_alt": "Tiger Road artwork: Lee Wong, the bald young warrior monk, crouches with his weapon drawn next to a tiger.",
+    "image": "/img/2026/tiger-road-md-waterfall.png",
+    "image_alt": "Tiger Road on the Mega Drive: the hero stands by a cave waterfall under Japanese characters.",
     "platforms": [
-      {"platform": "mega-drive", "status": "in progress", "links": []},
-      {"platform": "neo-geo", "status": "in progress", "links": []},
-      {"platform": "saturn", "status": "in progress", "links": []},
-      {"platform": "dreamcast", "status": "in progress", "links": []}
+      {
+        "platform": "mega-drive",
+        "status": "in progress",
+        "links": []
+      },
+      {
+        "platform": "neo-geo",
+        "status": "in progress",
+        "links": []
+      },
+      {
+        "platform": "saturn",
+        "status": "in progress",
+        "links": []
+      },
+      {
+        "platform": "dreamcast",
+        "status": "in progress",
+        "links": []
+      }
     ]
   },
   {
@@ -21,7 +37,11 @@
     "image": "/img/2026/cruisn-usa-dc-la-freeway.png",
     "image_alt": "Cruis'n USA on the Dreamcast: a bronze 1960s sports car on the grassy verge of the LA freeway, past palm trees.",
     "platforms": [
-      {"platform": "dreamcast", "status": "in progress", "links": []}
+      {
+        "platform": "dreamcast",
+        "status": "in progress",
+        "links": []
+      }
     ]
   },
   {
@@ -32,7 +52,11 @@
     "image": "/img/2026/shadow-warrior-dc-30th-start.png",
     "image_alt": "Shadow Warrior 30th Anniversary Edition start-up screen with an illustration of Lo Wang and the game's logo.",
     "platforms": [
-      {"platform": "dreamcast", "status": "in progress", "links": []}
+      {
+        "platform": "dreamcast",
+        "status": "in progress",
+        "links": []
+      }
     ]
   },
   {
@@ -43,7 +67,11 @@
     "image": "/img/2026/karnov-md-stage-climb.png",
     "image_alt": "Karnov on the Mega Drive: Karnov stands among stone ruins between two tall buildings.",
     "platforms": [
-      {"platform": "mega-drive", "status": "in progress", "links": []}
+      {
+        "platform": "mega-drive",
+        "status": "in progress",
+        "links": []
+      }
     ]
   }
 ]

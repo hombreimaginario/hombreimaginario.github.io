@@ -171,12 +171,17 @@ def filters():
     return '<div class="filters" role="group" aria-label="Filter by platform">\n' + "\n".join(btns) + "\n</div>"
 
 
+def asset_version(rel):
+    import hashlib
+    return hashlib.sha1((ROOT / rel).read_bytes()).hexdigest()[:8]
+
+
 def page(title, body, description=SITE_DESC, canonical="/", og_image=None, scripts=False, extra_head=""):
     full_title = f"{title} · {SITE_NAME}" if title else f"{SITE_NAME} · {SITE_SUB}"
     og_image = og_image or SOCIAL_CARD
     og_img = f'\n<meta property="og:image" content="{SITE_URL}{e(og_image)}">'
     og_img += '\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">' if og_image == SOCIAL_CARD else ""
-    script = '\n<script src="/assets/js/filter.js" defer></script>' if scripts else ""
+    script = f'\n<script src="/assets/js/filter.js?v={asset_version("assets/js/filter.js")}" defer></script>' if scripts else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -197,7 +202,7 @@ def page(title, body, description=SITE_DESC, canonical="/", og_image=None, scrip
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/atom+xml" title="{SITE_NAME}" href="/feed.xml">
 <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css?v={asset_version('assets/css/style.css')}">
 <script>document.documentElement.className += ' js';</script>{script}{extra_head}
 </head>
 <body>
@@ -325,7 +330,8 @@ def project_card(pr, posts, heading="h2", link_title=True):
     for pl in pr.get("platforms", []):
         links = " · ".join(f'<a href="{e(l["url"])}">{e(l["label"])}</a>' for l in pl.get("links", []))
         status_cls = "st-" + pl["status"].replace(" ", "-")
-        rows.append(f'<li><span class="pn"><a href="/archive/#{pl["platform"]}">{pl["platform"]}</a></span>'
+        rows.append(f'<li><span class="pn"><a href="/archive/#{pl["platform"]}">{PLATFORMS[pl["platform"]]}</a></span>'
+                    f'<span class="sep" aria-hidden="true"> – </span>'
                     f'<span class="st {status_cls}">{e(pl["status"])}</span>'
                     f'<span class="pl">{links}</span></li>')
     img = ""

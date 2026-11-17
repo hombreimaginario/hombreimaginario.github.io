@@ -239,7 +239,8 @@ h1.project-title { font-size: 36px; letter-spacing: -0.015em; }
 .project-desc { margin: 0; font-size: 17px; line-height: 1.6; color: var(--soft); }
 .plat-list { list-style: none; margin: 4px 0 0; padding: 0; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 13px; }
 .plat-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; padding: 10px 0; border-bottom: 1px solid var(--line); }
-.plat-list .pn { flex: 0 0 120px; }
+.plat-list .pn { flex: 0 0 auto; min-width: 110px; }
+.plat-list .sep { display: none; }
 .plat-list .pn a { color: var(--accent); }
 .plat-list .pn a:hover { color: var(--ink); }
 .plat-list .st { flex: 0 0 auto; padding: 1px 8px; border: 1px solid var(--chip); color: var(--soft); }
