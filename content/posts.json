@@ -156,6 +156,8 @@
     "platforms": [
       "mega-drive"
     ],
-    "project": "tiger-road"
+    "project": "tiger-road",
+    "cover": "/img/2026/tiger-road-md-v1-2-01.png",
+    "cover_alt": "Tiger Road on the Mega Drive: Lee Wong, axe in hand, at the steps of a red palace."
   }
 ]

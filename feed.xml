@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-17T22:07:24Z</updated>
+<updated>2026-11-17T22:17:49Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road MD: ten days of testing, up to V1.2</title>
@@ -15,8 +15,14 @@
 <updated>2026-11-17T12:00:00Z</updated>
 <summary>My latest tests on a real Mega Drive: the golden statues in level 2 froze the game, and the stone heads in the crocodile room slowed it down.</summary><category term="mega-drive"/>
 <content type="html">&lt;p&gt;The last ten days have been almost all testing. I play each build on a real Mega Drive and in BlastEm, send save states and photos of anything odd, and the fix usually comes back the same day. The boot screen now shows a version number instead of a build date, and today it reads V1.2.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-md-v1-2-02.png&quot; alt=&quot;Tiger Road on the Mega Drive: Lee Wong stands on rocks over the water below a cliff, with a golden urn above him and a kite man flying on the right.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
 &lt;p&gt;The level 2 mid-boss, the two golden statues, took four evenings. First the game froze completely: the music kept playing and nothing on screen moved. It was a trick to draw the standing statue in the background layer and save sprites, which got stuck in a loop. Then Wong started falling in slow motion during the fight, and when a statue jumped its lower half vanished, because the code hiding its upper arms was matching tile numbers that turned out to be its thighs. After the cuts, the right statue had no head and no attack and looked like something that hadn&#x27;t loaded, so it&#x27;s gone, painted over with wall. The trident statue no longer throws projectiles.&lt;/p&gt;
 &lt;p&gt;I also asked for a few trims. The skull room in level 2 allows two zombies at most, and the skulls breathe half as many fire particles, which took the frames where the game couldn&#x27;t rebuild its sprite list from 28.5% to almost zero. The green twins in level 5 flickered when they attacked on top of each other. Now the one on the left is always drawn in front, and the code that keeps them under the limit of 16 sprites per line was rewritten in assembly. The intro storm was too slow for its music and went from 584 frames to 472. The arcade does it in 353. The black screen after pressing START went from about 153 frames to 56.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-md-v1-2-03.png&quot; alt=&quot;Tiger Road on the Mega Drive: two green giants flank Lee Wong under a dialogue box that reads THIS WILL BE YOUR FINAL RESTING PLACE.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
 &lt;p&gt;Today I spent the afternoon in the yellow crocodile room in level 4. On console it slowed down when jumping between platforms: each head was 15 small sprites and there are usually four of them. Now each head is six bigger Mega Drive sprites, and dropped frames in the room went from 6.8% to 1.7%. Then there was the background flashing as a platform sinks. It&#x27;s the arcade&#x27;s own effect, but it looked like a bug, so I asked to keep the colours fixed. It took four builds. One turned the bottom of the blue column grey on the way in, another left the water grey after dying in the room. The one that works saves those three palettes the first time you enter the room in each level and rewrites them every frame.&lt;/p&gt;
 &lt;p&gt;The other bugs from the last few days, and what caused them:&lt;/p&gt;
 &lt;ul&gt;
@@ -26,7 +32,8 @@
   &lt;li&gt;The lives counter disappeared in the crocodile room. The bottom lines had too many sprites, and the lives were last in the list. They go first now.&lt;/li&gt;
   &lt;li&gt;The flag of the level 4 boss was greyish green instead of yellow and brown, because that stretch of the level shares palettes. Changing four colours fixed it.&lt;/li&gt;
   &lt;li&gt;Before the map after that boss, the arcade shows a mosaic of bits of rooms while it switches banks. The original does it that way, but I prefer a black screen there.&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;/ul&gt;
+&lt;p&gt;Tiger Road MD v1.2 is available on &lt;a href=&quot;https://hombreimaginario.itch.io&quot;&gt;my Itch.Io page&lt;/a&gt;. You can follow me on &lt;a href=&quot;https://x.com/hombreimagina&quot;&gt;X&lt;/a&gt; for more updates!&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
