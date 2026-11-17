@@ -4,9 +4,10 @@
 Sources (edit these):
   content/posts.json          one entry per post (metadata)
   content/posts/<slug>.html   the body of each post (plain HTML fragment)
+  content/projects.json       one entry per project (Projects section)
 
 Generated (do not edit by hand, they are rewritten on every build):
-  index.html, archive/index.html, posts/<slug>/index.html, feed.xml, 404.html
+  index.html, archive/index.html, posts/<slug>/index.html, projects/..., feed.xml, 404.html
 
 Run from the repository root:  python3 tools/build.py
 Standard library only.
@@ -76,6 +77,33 @@ def load_posts():
     return posts
 
 
+STATUSES = ("planned", "in progress", "beta", "released", "on hold")
+
+
+def load_projects():
+    path = ROOT / "content" / "projects.json"
+    if not path.exists():
+        return []
+    projects = json.loads(path.read_text(encoding="utf-8"))
+    for pr in projects:
+        for key in ("slug", "name", "description"):
+            if not pr.get(key):
+                sys.exit(f"projects.json: entry missing '{key}': {pr}")
+        for pl in pr.get("platforms", []):
+            if pl["platform"] not in PLATFORMS:
+                sys.exit(f"projects.json: unknown platform '{pl['platform']}' in '{pr['slug']}'")
+            if pl.get("status") not in STATUSES:
+                sys.exit(f"projects.json: status must be one of {STATUSES} ({pr['slug']})")
+    return projects
+
+
+PROJECT_SLUGS = set()
+
+
+def project_url(slug):
+    return f"/projects/{slug}/"
+
+
 def url(p):
     return f"/posts/{p['slug']}/"
 
@@ -84,7 +112,8 @@ def tags_links(p):
     """Tags for a post page: each platform links to the archive filtered by it."""
     parts = [f'<a href="/archive/#{e(x)}">{e(x)}</a>' for x in p["platforms"]]
     if p.get("project"):
-        parts.append("#" + e(p["project"]))
+        tag = "#" + e(p["project"])
+        parts.append(f'<a href="{project_url(p["project"])}">{tag}</a>' if p["project"] in PROJECT_SLUGS else tag)
     return " · ".join(parts)
 
 
@@ -107,6 +136,8 @@ def icon_svg(key):
 
 def header(current="", small=False):
     nav = []
+    projects_attr = ' aria-current="page"' if current == "projects" else ""
+    nav.append(f'<a href="/projects/"{projects_attr}>projects</a>')
     archive_attr = ' aria-current="page"' if current == "archive" else ""
     nav.append(f'<a href="/archive/"{archive_attr}>archive</a>')
     nav.append('<a href="/feed.xml">rss</a>')
@@ -285,6 +316,82 @@ def build_post(p, newer, older):
     return page(p["title"], body, description=p["summary"], canonical=url(p), og_image=p.get("cover"))
 
 
+def project_card(pr, posts, heading="h2", link_title=True):
+    n = sum(1 for p in posts if p.get("project") == pr["slug"])
+    title = e(pr["name"])
+    if link_title:
+        title = f'<a href="{project_url(pr["slug"])}">{title}</a>'
+    rows = []
+    for pl in pr.get("platforms", []):
+        links = " · ".join(f'<a href="{e(l["url"])}">{e(l["label"])}</a>' for l in pl.get("links", []))
+        status_cls = "st-" + pl["status"].replace(" ", "-")
+        rows.append(f'<li><span class="pn"><a href="/archive/#{pl["platform"]}">{pl["platform"]}</a></span>'
+                    f'<span class="st {status_cls}">{e(pl["status"])}</span>'
+                    f'<span class="pl">{links}</span></li>')
+    img = ""
+    if pr.get("image"):
+        img = f'<img class="project-img" src="{e(pr["image"])}" alt="{e(pr.get("image_alt", ""))}" loading="lazy">'
+        if link_title:
+            img = f'<a href="{project_url(pr["slug"])}" tabindex="-1" aria-hidden="true">{img}</a>'
+    posts_link = ""
+    if link_title and n:
+        posts_link = f'\n<a class="read-more" href="{project_url(pr["slug"])}">{n} {"post" if n == 1 else "posts"} →</a>'
+    return f"""<article class="project">
+{img}
+<div class="project-main">
+<{heading} class="project-title">{title}</{heading}>
+<div class="project-orig">{e(pr.get("original", ""))}</div>
+<p class="project-desc">{e(pr["description"])}</p>
+<ul class="plat-list" aria-label="Platforms">
+{chr(10).join(rows)}
+</ul>{posts_link}
+</div>
+</article>"""
+
+
+def build_projects(projects, posts):
+    cards = "\n".join(project_card(pr, posts) for pr in projects)
+    body = f"""{header(current="projects")}
+<main id="main" style="display:flex;flex-direction:column;gap:48px">
+<div class="page-head">
+<div class="prompt" aria-hidden="true">$ ls ./projects</div>
+<h1 class="page-title">Projects</h1>
+<p class="page-lede">What I'm porting, to which consoles, and how far along each version is.</p>
+</div>
+<div class="projects">
+{cards}
+</div>
+</main>
+{footer()}"""
+    return page("Projects", body, description="Retro ports by hombreimaginario: games, platforms and status.",
+                canonical="/projects/")
+
+
+def build_project(pr, posts):
+    mine = [p for p in posts if p.get("project") == pr["slug"]]
+    rows = "\n".join(
+        f'<li><a href="{url(p)}"><span class="d">{p["date"]}</span>'
+        f'<span class="t">{e(p["title"])}</span>'
+        f'<span class="g">{" · ".join(e(x) for x in p["platforms"])}</span></a></li>'
+        for p in mine)
+    n = len(mine)
+    posts_html = f"""<section class="month">
+<h2><span>posts</span><span class="count">{n} {'post' if n == 1 else 'posts'}</span></h2>
+<ul>
+{rows}
+</ul>
+</section>""" if mine else '<p class="empty">No posts about this project yet.</p>'
+    body = f"""{header(current="projects", small=True)}
+<main id="main" style="display:flex;flex-direction:column;gap:48px">
+<a class="back" href="/projects/">← all projects</a>
+{project_card(pr, posts, heading="h1", link_title=False)}
+{posts_html}
+</main>
+{footer()}"""
+    return page(pr["name"], body, description=pr["description"], canonical=project_url(pr["slug"]),
+                og_image=pr.get("image"))
+
+
 def build_feed(posts):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     entries = []
@@ -334,6 +441,8 @@ def write(rel, text):
 
 def main():
     posts = load_posts()
+    projects = load_projects()
+    PROJECT_SLUGS.update(pr["slug"] for pr in projects)
     # Rebuild posts/ from scratch so removed posts disappear.
     out_posts = ROOT / "posts"
     if out_posts.exists():
@@ -344,6 +453,13 @@ def main():
         write(f"posts/{p['slug']}/index.html", build_post(p, newer, older))
     write("index.html", build_home(posts))
     write("archive/index.html", build_archive(posts))
+    out_projects = ROOT / "projects"
+    if out_projects.exists():
+        shutil.rmtree(out_projects)
+    if projects:
+        write("projects/index.html", build_projects(projects, posts))
+        for pr in projects:
+            write(f"projects/{pr['slug']}/index.html", build_project(pr, posts))
     write("feed.xml", build_feed(posts))
     write("404.html", build_404())
     print(f"Built {len(posts)} post(s).")
