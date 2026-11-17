@@ -5,8 +5,29 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-17T12:16:29Z</updated>
+<updated>2026-11-17T21:54:28Z</updated>
 <author><name>hombreimaginario</name></author>
+<entry>
+<title>Tiger Road MD: bug hunting up to V1.2</title>
+<link href="https://hombreimaginario.com/posts/tiger-road-md-v1-2/"/>
+<id>https://hombreimaginario.com/posts/tiger-road-md-v1-2/</id>
+<published>2026-11-17T12:00:00Z</published>
+<updated>2026-11-17T12:00:00Z</updated>
+<summary>Ten days of testing on a real Mega Drive: the golden statues of level 2, the stone heads in the crocodile room and the bugs found along the way.</summary><category term="mega-drive"/>
+<content type="html">&lt;p&gt;The last ten days have been almost all testing. I play each build on a real Mega Drive and in BlastEm, send save states and photos of anything odd, and the fix usually comes back the same day. The boot screen now shows a version number instead of a build date, and today it reads V1.2.&lt;/p&gt;
+&lt;p&gt;The level 2 mid-boss, the two golden statues, ate three evenings on its own. First the game froze completely: the music kept playing and nothing on screen moved. The culprit was a trick to draw the standing statue in the background layer and save sprites, which got stuck in a loop. Then Wong started falling in slow motion during the fight, and when a statue jumped its lower half vanished, because the code hiding its upper arms was matching tile numbers that turned out to be its thighs. In the end I simplified the room. After the cuts, the right statue had no head and no attack and looked like something that hadn&#x27;t loaded, so it&#x27;s gone, painted over with wall. The trident statue no longer throws projectiles.&lt;/p&gt;
+&lt;p&gt;Elsewhere I asked for some cuts and speed-ups. The skull room in level 2 allows two zombies at most, and the skulls breathe half as many fire particles, which took the frames where the game couldn&#x27;t rebuild its sprite list from 28.5% to almost zero. The green twins in level 5 flickered when they attacked on top of each other. Now the one on the left is always drawn in front, and the code that keeps them under the limit of 16 sprites per line was rewritten in assembly. The intro storm was too slow for its music and went from 584 frames to 472. The arcade does it in 353, so there&#x27;s still a gap. The black screen after pressing START went from about 153 frames to 56.&lt;/p&gt;
+&lt;p&gt;Today belonged to the yellow crocodile room in level 4. The crocodiles never caused a single problem. The stone heads did. On console the room slowed down when jumping between platforms: each head was 15 small sprites and there are usually four of them. Now each head is six bigger Mega Drive sprites, and dropped frames in the room went from 6.8% to 1.7%. Then there was the background flashing as a platform sinks. It&#x27;s the arcade&#x27;s own effect, but it looked like a bug, so I asked to keep the colours fixed. The first attempt turned the bottom of the blue column grey on the way in. The second made the colours jump when leaving the room. The third left the water grey after dying and respawning. The version that stuck saves those three palettes the first time you enter the room in each level and rewrites them every frame.&lt;/p&gt;
+&lt;p&gt;The other bugs from the last few days, and what caused them:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The head of the statue I removed in level 2 was still visible in room 4. It turns to face Wong, and only one of its eight directions was hidden. Dozens of games by me and my testers, on emulator and console, and nobody had seen it, because it only turns if Wong is to its left at the exact moment it decides. Now the object is never created.&lt;/li&gt;
+  &lt;li&gt;After beating Fudo, Wong walked out in front of the wall instead of behind it. The TIME COUNT text switched the foreground layer to text mode. Short texts like that one are now drawn with sprites.&lt;/li&gt;
+  &lt;li&gt;Crossing some doors in level 4 showed squares with graphics from other rooms. The tile cache ran out of space and freed blocks that were still on screen. In that case the new room now keeps the colours of the previous one until the next cut, which is hard to spot.&lt;/li&gt;
+  &lt;li&gt;The lives counter disappeared in the crocodile room. The bottom lines had too many sprites, and the lives were last in the list. They go first now.&lt;/li&gt;
+  &lt;li&gt;The flag of the level 4 boss was greyish green instead of yellow and brown, because that stretch of the level shares palettes. Changing four colours fixed it.&lt;/li&gt;
+  &lt;li&gt;Before the map after that boss, the arcade shows a mosaic of bits of rooms while it switches banks. That&#x27;s how the original does it, but I prefer black, so it&#x27;s black.&lt;/li&gt;
+&lt;/ul&gt;</content>
+</entry>
 <entry>
 <title>Shadow Warrior DC: 30th Anniversary Edition</title>
 <link href="https://hombreimaginario.com/posts/shadow-warrior-dc-30th-anniversary-edition/"/>

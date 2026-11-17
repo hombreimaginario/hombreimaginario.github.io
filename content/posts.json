@@ -147,5 +147,15 @@
     "project": "tiger-road",
     "cover": "/img/2026/tiger-road-lee-wong.webp",
     "cover_alt": "Tiger Road artwork: Lee Wong, the bald young warrior monk, crouches with his weapon drawn next to a tiger."
+  },
+  {
+    "slug": "tiger-road-md-v1-2",
+    "date": "2026-11-17",
+    "title": "Tiger Road MD: bug hunting up to V1.2",
+    "summary": "Ten days of testing on a real Mega Drive: the golden statues of level 2, the stone heads in the crocodile room and the bugs found along the way.",
+    "platforms": [
+      "mega-drive"
+    ],
+    "project": "tiger-road"
   }
 ]
