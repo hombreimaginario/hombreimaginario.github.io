@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-17T23:00:04Z</updated>
+<updated>2026-11-17T23:03:34Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road MD: ten days of testing, up to V1.2</title>
@@ -13,7 +13,7 @@
 <id>https://hombreimaginario.com/posts/tiger-road-md-v1-2/</id>
 <published>2026-11-17T12:00:00Z</published>
 <updated>2026-11-17T12:00:00Z</updated>
-<summary>My latest tests on a real Mega Drive: the golden statues in level 2 froze the game, and the stone heads in the crocodile room slowed it down.</summary><category term="mega-drive"/>
+<summary>Several nights of fixes and cuts made by hand, room by room, so Tiger Road runs on a real Mega Drive without slowdown or flicker. This is where V1.2 came from.</summary><category term="mega-drive"/>
 <content type="html">&lt;p&gt;The last ten days have been almost all testing. I play each build on a real Mega Drive and in BlastEm, take photos or screenshots and save states of anything odd, and the fix usually comes back the same day. The boot screen now shows a version number instead of a build date, and today it reads V1.2.&lt;/p&gt;
 &lt;p&gt;The level 2 mid-boss, the two golden statues, took four evenings. First the game froze completely: the music kept playing and nothing on screen moved. It was a trick to draw the standing statue in the background layer and save sprites, which got stuck in a loop. Then Wong started falling in slow motion during the fight, and when the main statue moved towards Wong, its lower half vanished, because the code hiding its upper arms was matching tile numbers that turned out to be its thighs. After an insane number of tries and tricks and tweaks and test builds, the statue on the right had to go, completely, painted over with wall, and the main one no longer throws projectiles. It was frustrating to come to the conclusion I had to make the cuts, but in the end I&#x27;d rather take that over more flickering.&lt;/p&gt;
 &lt;figure&gt;
