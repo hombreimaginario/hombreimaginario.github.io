@@ -134,5 +134,16 @@
     "project": "tiger-road",
     "cover": "/img/2026/tiger-road-md-twins.png",
     "cover_alt": "Tiger Road on the Mega Drive: the hero, with an axe, faces two giant green-armoured twin bosses in front of painted warrior portraits."
+  },
+  {
+    "slug": "tiger-road-saturn-dreamcast",
+    "date": "2026-11-07",
+    "title": "Tiger Road: Sega Saturn and Dreamcast",
+    "summary": "The plan was always to reuse the analysis and breakdown of the original arcade to bring Capcom's classic to the Mega Drive's big sisters, for a port with no compromises.",
+    "platforms": [
+      "saturn",
+      "dreamcast"
+    ],
+    "project": "tiger-road"
   }
 ]
