@@ -164,7 +164,7 @@
     "slug": "karnov-md-crowded-sea",
     "date": "2026-11-18",
     "title": "Karnov MD: too many fish",
-    "summary": "Where the Mega Drive falls short of the Karnov arcade board, with sprites, colours and frames, and what I've done so far to hide it.",
+    "summary": "The Mega Drive can't keep up with the Karnov arcade board when the screen fills up. Here's where it slows down or flickers, and what I've done so far to hide it.",
     "platforms": [
       "mega-drive"
     ],
