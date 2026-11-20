@@ -164,10 +164,12 @@
     "slug": "karnov-md-crowded-sea",
     "date": "2026-11-18",
     "title": "Karnov MD: too many fish",
-    "summary": "The Mega Drive can't keep up with the Karnov arcade board when the screen fills up. Here's where it slows down or flickers, and what I've done so far to hide it.",
+    "summary": "Slowdown and flicker in the Karnov port when the screen fills up, and what I've done about them so far.",
     "platforms": [
       "mega-drive"
     ],
-    "project": "karnov"
+    "project": "karnov",
+    "cover": "/img/2026/karnov-md-stage-3.png",
+    "cover_alt": "Karnov on the Mega Drive: Karnov climbs a tall golden pole among grey rock spires in stage 3, with birds and fireballs around him."
   }
 ]
