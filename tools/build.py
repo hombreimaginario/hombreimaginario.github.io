@@ -468,6 +468,8 @@ def main():
             write(f"projects/{pr['slug']}/index.html", build_project(pr, posts))
     write("feed.xml", build_feed(posts))
     write("404.html", build_404())
+    import builder_pages                       # generador de discos de Tiger Road (vista previa, sin enlaces)
+    builder_pages.main(ROOT)
     print(f"Built {len(posts)} post(s).")
 
 
