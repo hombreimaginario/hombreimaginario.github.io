@@ -5,8 +5,34 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-21T22:42:21Z</updated>
+<updated>2026-11-21T22:52:11Z</updated>
 <author><name>hombreimaginario</name></author>
+<entry>
+<title>Tiger Road for Saturn and Dreamcast is out now!</title>
+<link href="https://hombreimaginario.com/posts/tiger-road-saturn-dreamcast-out-now/"/>
+<id>https://hombreimaginario.com/posts/tiger-road-saturn-dreamcast-out-now/</id>
+<published>2026-11-21T12:00:00Z</published>
+<updated>2026-11-21T12:00:00Z</updated>
+<summary>After a last round of tests and fixes, the Saturn and Dreamcast versions of Tiger Road are finished, and you can build your disc image from the arcade ROM sets you own.</summary><category term="saturn"/><category term="dreamcast"/>
+<content type="html">&lt;p&gt;Two weeks ago I wrote that the Saturn and Dreamcast versions had caught up with the Mega Drive one. Since then I&#x27;ve tested the Saturn version on a real console and brought over the fixes that made sense from the Mega Drive. Both versions are now finished.&lt;/p&gt;
+&lt;p&gt;On the Saturn, with a Saroo, most of what I had to check was fine: the countdown in the stage select, the boss battles, the bezels during the pause. Wong&#x27;s attack shout didn&#x27;t play, though, while the children in the intro did. The sound chip didn&#x27;t restart the channel when the voice was stopped and started again in the same frame, so now it starts one frame later. The extra life sound was very shrill and is now one step quieter.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-dc-twins.png&quot; alt=&quot;Tiger Road: Lee Wong runs towards the two green giants in front of the throne, with the boss energy bar at the top.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;Some of last week&#x27;s Mega Drive bugs can&#x27;t happen here. For instance, the Dreamcast has no sprite limit to worry about: all 160 sprites in the arcade&#x27;s list go to the PowerVR.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-dc-crocodiles.png&quot; alt=&quot;Tiger Road: Lee Wong stands on a sinking stone head in the yellow crocodile room, with two crocodiles in the water below.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;The Dreamcast version emulates the whole arcade board, and I wanted more margin in the heaviest rooms. The 68000 now takes 21 to 24% less time on average, mostly from handling RAM accesses directly and running some of the game&#x27;s loops in C in one go. The stereo sound cost almost 10 ms per frame in the worst room when the music doesn&#x27;t come from the CD. With the FM synthesis rewritten one operator at a time and a cheaper stereo mix, it&#x27;s down to about 8 ms, and the output is identical, byte for byte. Effects and voices are also 1.8 dB quieter in stereo, because next to the music they sounded too loud.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-dc-statues.png&quot; alt=&quot;Tiger Road: Lee Wong jumps at the golden statue in the level 2 mid-boss room, with a large demon statue behind.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;Anyway. After a few test builds and tweaks, the boot screen now shows the version instead of the build date: V1.2 on both consoles. The Saturn build comes as a CUE/BIN, while the Dreamcast one comes as a folder with the GDI and its tracks, ready to copy to a GDEMU.&lt;/p&gt;
+&lt;p&gt;I can&#x27;t share Capcom&#x27;s ROMs, so there&#x27;s no disc to download. Instead, you can build your disc image from the Tiger Road arcade ROM sets you own.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hombreimaginario.com/build/tiger-road-ss/&quot;&gt;Build your own Saturn disc here&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hombreimaginario.com/build/tiger-road-dc/&quot;&gt;Build your own Dreamcast disc here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can follow me on &lt;a href=&quot;https://x.com/hombreimagina&quot;&gt;X&lt;/a&gt; for more updates.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>Karnov MD: too many fish</title>
 <link href="https://hombreimaginario.com/posts/karnov-md-crowded-sea/"/>

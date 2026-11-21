@@ -1,0 +1,18 @@
+<p>Two weeks ago I wrote that the Saturn and Dreamcast versions had caught up with the Mega Drive one. Since then I've tested the Saturn version on a real console and brought over the fixes that made sense from the Mega Drive. Both versions are now finished.</p>
+<p>On the Saturn, with a Saroo, most of what I had to check was fine: the countdown in the stage select, the boss battles, the bezels during the pause. Wong's attack shout didn't play, though, while the children in the intro did. The sound chip didn't restart the channel when the voice was stopped and started again in the same frame, so now it starts one frame later. The extra life sound was very shrill and is now one step quieter.</p>
+<figure>
+  <img src="/img/2026/tiger-road-ss-dc-twins.png" alt="Tiger Road: Lee Wong runs towards the two green giants in front of the throne, with the boss energy bar at the top." width="256" height="224" loading="lazy">
+</figure>
+<p>Some of last week's Mega Drive bugs can't happen here. For instance, the Dreamcast has no sprite limit to worry about: all 160 sprites in the arcade's list go to the PowerVR.</p>
+<figure>
+  <img src="/img/2026/tiger-road-ss-dc-crocodiles.png" alt="Tiger Road: Lee Wong stands on a sinking stone head in the yellow crocodile room, with two crocodiles in the water below." width="256" height="224" loading="lazy">
+</figure>
+<p>The Dreamcast version emulates the whole arcade board, and I wanted more margin in the heaviest rooms. The 68000 now takes 21 to 24% less time on average, mostly from handling RAM accesses directly and running some of the game's loops in C in one go. The stereo sound cost almost 10 ms per frame in the worst room when the music doesn't come from the CD. With the FM synthesis rewritten one operator at a time and a cheaper stereo mix, it's down to about 8 ms, and the output is identical, byte for byte. Effects and voices are also 1.8 dB quieter in stereo, because next to the music they sounded too loud.</p>
+<figure>
+  <img src="/img/2026/tiger-road-ss-dc-statues.png" alt="Tiger Road: Lee Wong jumps at the golden statue in the level 2 mid-boss room, with a large demon statue behind." width="256" height="224" loading="lazy">
+</figure>
+<p>Anyway. After a few test builds and tweaks, the boot screen now shows the version instead of the build date: V1.2 on both consoles. The Saturn build comes as a CUE/BIN, while the Dreamcast one comes as a folder with the GDI and its tracks, ready to copy to a GDEMU.</p>
+<p>I can't share Capcom's ROMs, so there's no disc to download. Instead, you can build your disc image from the Tiger Road arcade ROM sets you own.</p>
+<p><a href="/build/tiger-road-ss/">Build your own Saturn disc here</a><br>
+<a href="/build/tiger-road-dc/">Build your own Dreamcast disc here</a></p>
+<p>You can follow me on <a href="https://x.com/hombreimagina">X</a> for more updates.</p>

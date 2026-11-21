@@ -171,5 +171,18 @@
     "project": "karnov",
     "cover": "/img/2026/karnov-md-stage-3.png",
     "cover_alt": "Karnov on the Mega Drive: Karnov climbs a tall golden pole among grey rock spires in stage 3, with birds and fireballs around him."
+  },
+  {
+    "slug": "tiger-road-saturn-dreamcast-out-now",
+    "date": "2026-11-21",
+    "title": "Tiger Road for Saturn and Dreamcast is out now!",
+    "summary": "After a last round of tests and fixes, the Saturn and Dreamcast versions of Tiger Road are finished, and you can build your disc image from the arcade ROM sets you own.",
+    "platforms": [
+      "saturn",
+      "dreamcast"
+    ],
+    "project": "tiger-road",
+    "cover": "/img/2026/tiger-road-ss-dc-armors.png",
+    "cover_alt": "Tiger Road: Lee Wong with his axe in a wooden hall full of spears, between two armoured soldiers on shelves."
   }
 ]
