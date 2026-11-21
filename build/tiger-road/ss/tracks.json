@@ -1,0 +1,222 @@
+{
+ "30": [
+  {
+   "tipo": "una vez",
+   "pista": 2,
+   "muestras": 1280664
+  }
+ ],
+ "31": [
+  {
+   "tipo": "bucle",
+   "pista": 3,
+   "muestras": 1719900
+  }
+ ],
+ "32": [
+  {
+   "tipo": "entera",
+   "pista": 4,
+   "muestras": 3068772
+  },
+  {
+   "tipo": "bucle",
+   "pista": 5,
+   "muestras": 1984500
+  }
+ ],
+ "33": [
+  {
+   "tipo": "entera",
+   "pista": 6,
+   "muestras": 2979396
+  },
+  {
+   "tipo": "bucle",
+   "pista": 7,
+   "muestras": 2387280
+  }
+ ],
+ "34": [
+  {
+   "tipo": "entera",
+   "pista": 8,
+   "muestras": 2747724
+  },
+  {
+   "tipo": "bucle",
+   "pista": 9,
+   "muestras": 2405508
+  }
+ ],
+ "35": [
+  {
+   "tipo": "entera",
+   "pista": 10,
+   "muestras": 2563680
+  },
+  {
+   "tipo": "bucle",
+   "pista": 11,
+   "muestras": 1716960
+  }
+ ],
+ "36": [
+  {
+   "tipo": "entera",
+   "pista": 12,
+   "muestras": 1687560
+  },
+  {
+   "tipo": "bucle",
+   "pista": 13,
+   "muestras": 1391796
+  }
+ ],
+ "37": [
+  {
+   "tipo": "una vez",
+   "pista": 14,
+   "muestras": 170520
+  }
+ ],
+ "38": [
+  {
+   "tipo": "una vez",
+   "pista": 15,
+   "muestras": 3727332
+  }
+ ],
+ "39": [
+  {
+   "tipo": "una vez",
+   "pista": 16,
+   "muestras": 1448244
+  }
+ ],
+ "3a": [
+  {
+   "tipo": "una vez",
+   "pista": 17,
+   "muestras": 226968
+  }
+ ],
+ "3b": [
+  {
+   "tipo": "una vez",
+   "pista": 18,
+   "muestras": 484512
+  }
+ ],
+ "3c": [
+  {
+   "tipo": "una vez",
+   "pista": 19,
+   "muestras": 423360
+  }
+ ],
+ "3d": [
+  {
+   "tipo": "una vez",
+   "pista": 20,
+   "muestras": 402780
+  }
+ ],
+ "3e": [
+  {
+   "tipo": "bucle",
+   "pista": 21,
+   "muestras": 5219676
+  }
+ ],
+ "3f": [
+  {
+   "tipo": "bucle",
+   "pista": 22,
+   "muestras": 1643460
+  }
+ ],
+ "40": [
+  {
+   "tipo": "entera",
+   "pista": 23,
+   "muestras": 1509984
+  },
+  {
+   "tipo": "bucle",
+   "pista": 24,
+   "muestras": 2270268
+  }
+ ],
+ "41": [
+  {
+   "tipo": "entera",
+   "pista": 25,
+   "muestras": 303408
+  },
+  {
+   "tipo": "bucle",
+   "pista": 26,
+   "muestras": 1482936
+  }
+ ],
+ "42": [
+  {
+   "tipo": "entera",
+   "pista": 27,
+   "muestras": 913164
+  },
+  {
+   "tipo": "bucle",
+   "pista": 28,
+   "muestras": 1648752
+  }
+ ],
+ "43": [
+  {
+   "tipo": "entera",
+   "pista": 29,
+   "muestras": 1138368
+  },
+  {
+   "tipo": "bucle",
+   "pista": 30,
+   "muestras": 1324176
+  }
+ ],
+ "44": [
+  {
+   "tipo": "una vez",
+   "pista": 31,
+   "muestras": 238140
+  }
+ ],
+ "45": [
+  {
+   "tipo": "bucle",
+   "pista": 32,
+   "muestras": 1406496
+  }
+ ],
+ "46": [
+  {
+   "tipo": "una vez",
+   "pista": 33,
+   "muestras": 142296
+  }
+ ],
+ "01": [
+  {
+   "tipo": "una vez",
+   "pista": 34,
+   "muestras": 185220
+  }
+ ],
+ "2d": [
+  {
+   "tipo": "una vez",
+   "pista": 35,
+   "muestras": 195510
+  }
+ ]
+}

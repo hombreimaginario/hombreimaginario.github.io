@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Disc builder · Tiger Road Saturn · hombreimaginario</title>
 <meta name="description" content="Capcom&#x27;s action platformer set in medieval China, also known as Tora-he no Michi, ported from the original arcade ROM: a binary port on the Mega Drive, Neo Geo and Saturn, and a full reproduction of the arcade board on the Dreamcast. Japanese, English and Spanish text, and stereo music.">
-<meta name="robots" content="noindex">
 <link rel="canonical" href="https://hombreimaginario.com/build/tiger-road-ss/">
 <meta property="og:site_name" content="hombreimaginario">
 <meta property="og:title" content="Tiger Road">
@@ -25,8 +24,8 @@
 
 <style>
 .bld { display:flex; flex-direction:column; gap:32px; }
-.bld-hero { display:grid; grid-template-columns: 1fr; gap:20px; }
-.bld-hero img { width:100%; height:auto; image-rendering:auto; border:1px solid var(--line); }
+.bld-hero { display:grid; grid-template-columns:1fr; gap:20px; }
+.bld-hero img { width:100%; height:auto; border:1px solid var(--line); }
 .bld h1 { font-size:28px; line-height:1.2; margin:0; color:var(--ink); font-weight:600; }
 .bld .kicker { font-family:var(--mono); font-size:13px; color:var(--muted); margin:0 0 6px; }
 .bld p { margin:0; color:var(--text); }
@@ -35,25 +34,31 @@
 .step h2 { font-size:15px; margin:0; font-family:var(--mono); font-weight:500; color:var(--ink); display:flex; gap:10px; align-items:baseline; }
 .step h2 .n { color:var(--accent); }
 .step.off { opacity:.5; }
-.drop { border:1.5px dashed var(--chip); padding:22px; text-align:center; font-size:15px; color:var(--soft); }
+.drop { border:1.5px dashed var(--chip); padding:22px; text-align:center; font-size:15px; color:var(--soft); display:block; cursor:pointer; }
+.drop.over { border-color:var(--accent); background:#EEF2FD; }
 .drop b { color:var(--accent); font-weight:500; }
+.drop .names { display:block; font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:6px; word-break:break-all; }
+.drop input { position:absolute; width:1px; height:1px; opacity:0; }
 .files { list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:13px; display:flex; flex-direction:column; gap:6px; }
 .files li { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:8px 10px; background:var(--bg); }
 .ok { color:#1F7A3A; } .opt { color:var(--muted); } .bad { color:#B3261E; }
-.opts { display:flex; flex-direction:column; gap:8px; font-size:15px; }
-.opts label { display:flex; gap:10px; align-items:flex-start; }
-.opts small { display:block; color:var(--muted); font-size:13px; }
 .btn { align-self:flex-start; font:500 15px var(--sans); background:var(--accent); color:#fff; border:0; padding:10px 18px; cursor:pointer; }
 .btn[disabled] { background:var(--chip); color:var(--muted); cursor:default; }
 .note { font-size:14px; color:var(--soft); background:var(--code-bg); padding:10px 12px; }
+.msg { color:#B3261E; font-size:14px; }
+.msg:empty { display:none; }
 .bar { height:8px; background:var(--code-bg); }
-.bar span { display:block; height:100%; background:var(--accent); }
+.bar span { display:block; height:100%; width:0; background:var(--accent); transition:width .3s; }
 .stages { list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:13px; display:flex; flex-direction:column; gap:4px; color:var(--muted); }
-.stages .done { color:var(--text); } .stages .now { color:var(--accent); }
+.stages li::before { content:'· '; }
+.stages .done { color:var(--text); } .stages .done::before { content:'✓ '; }
+.stages .now { color:var(--accent); } .stages .now::before { content:'› '; }
+.dl a { display:inline-block; font:500 15px var(--sans); background:#1F7A3A; color:#fff; padding:10px 18px; text-decoration:none; }
+.run, .dl { display:flex; flex-direction:column; gap:12px; }
+.run[hidden], .dl[hidden] { display:none; }
 .faq { display:flex; flex-direction:column; gap:14px; font-size:15px; }
 .faq h3 { font-size:15px; margin:0 0 4px; color:var(--ink); }
-.mock { font-family:var(--mono); font-size:12px; color:#8A5A00; background:#FFF3D6; padding:6px 10px; align-self:flex-start; }
-@media (min-width: 720px) { .bld-hero { grid-template-columns: 1fr 1fr; align-items:center; } }
+@media (min-width:720px) { .bld-hero { grid-template-columns:1fr 1fr; align-items:center; } }
 </style>
 </head>
 <body>
@@ -74,9 +79,8 @@
 <a class="icon github" href="https://github.com/hombreimaginario" aria-label="GitHub" rel="me"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
 </nav>
 </header>
-<main id="main" class="bld">
+<main id="main" class="bld" data-builder="ss" data-base="/build/tiger-road/">
 <a class="back" href="/projects/tiger-road/">← Tiger Road</a>
-<span class="mock">PREVIEW · not working yet</span>
 <div class="bld-hero">
 <div>
 <p class="kicker">disc builder · V1.2</p>
@@ -84,31 +88,38 @@
 </div>
 <img src="/img/2026/tiger-road-ss-bezel2.png" alt="Tiger Road on the Saturn with an illustrated bezel on the side bands." width="320" height="224">
 </div>
-<p class="lead">I can't share Capcom's ROMs, so there's no disc to download. This page builds the Saturn disc image from the arcade ROM set you own. Everything happens in your browser: your files are never uploaded anywhere.</p>
+<p class="lead">I can't share Capcom's ROMs, so there's no disc to download. This page builds the Saturn disc image from the arcade ROM sets you own. Everything happens in your browser: your files are never uploaded anywhere.</p>
 <section class="step">
 <h2><span class="n">1</span> Add your arcade ROMs</h2>
-<p>Both MAME ROM sets are needed, as .zip files: split (two files) or merged (toramich inside tigeroad.zip). Every file is checked against its expected size and checksum.</p>
-<div class="drop">Drop your ROM files here or <b>choose files</b></div>
-<ul class="files"><li><span>tigeroad.zip <span class="opt">· Tiger Road, World/US</span></span><span class="opt">required</span></li><li><span>toramich.zip <span class="opt">· Tora-he no Michi, Japan: Japanese text, logo and voices</span></span><span class="opt">required</span></li></ul>
+<p>Both MAME ROM sets are needed, as .zip files: split (two files) or merged (toramich inside tigeroad.zip). Every file is checked against its expected checksum.</p>
+<label class="drop">Drop your ROM files here or <b>choose files</b><input id="roms" type="file" accept=".zip" multiple><span class="names"></span></label>
+<ul class="files">
+<li data-set="us"><span>tigeroad.zip <span class="opt">· Tiger Road, World/US</span></span><span class="st opt">required</span></li>
+<li data-set="jp"><span>toramich.zip <span class="opt">· Tora-he no Michi, Japan: Japanese text, logo and voices</span></span><span class="st opt">required</span></li>
+</ul>
+<p class="msg"></p>
 </section>
-<section class="step off">
+<section class="step later off">
 <h2><span class="n">2</span> Format</h2>
-<div class="opts"><label><input type="radio" name="fmt" checked><span>BIN/CUE<small>For Saroo, Fenrir and other optical drive emulators, or to burn to a CD-R.</small></span></label></div>
+<p><b>BIN/CUE</b>: for Saroo, Fenrir and other optical drive emulators, or to burn to a CD-R.</p>
 </section>
-<section class="step off">
+<section class="step later off">
 <h2><span class="n">3</span> Build</h2>
-<p class="note">The music on the disc is played from CD audio tracks. They can't be shared either, so your browser recreates them by emulating the arcade's two YM2203 sound chips, channel by channel, and mixing them in stereo. This takes two or three minutes on a recent computer.</p>
-<button class="btn" disabled>Build disc image</button>
-
+<p class="note">The music on the disc is played from CD audio tracks. They can't be shared either, so your browser recreates them by emulating the arcade's two YM2203 sound chips, channel by channel, and mixing them in stereo. This takes two or three minutes on a recent computer: keep this tab open.</p>
+<button class="btn" id="build" disabled>Build disc image</button>
+<div class="run" hidden><div class="bar"><span></span></div><ul class="stages"><li><span class="t">Checking your ROM files</span></li><li><span class="t">Building the program, graphics and voices</span></li><li><span class="t">Generating music tracks</span></li><li><span class="t">Writing the disc image</span></li></ul></div>
+<div class="dl" hidden><a href="#">Download</a><p class="note">A .zip with the .cue, the data track and the 34 audio tracks.</p></div>
 </section>
 <section class="faq">
 <h3 style="font-size:17px">Questions</h3>
 <div><h3>Where do I get the ROMs?</h3><p>From your own arcade board or a set you legally own. I can't help with that.</p></div>
 <div><h3>What do I need to play it?</h3><p>A Saturn with a Saroo, a Fenrir or another drive emulator, or a modded console that runs CD-Rs. It also works in Mednafen.</p></div>
-<div><h3>Credits</h3><p>The bezel artwork is by Capcom, taken from the <a href="FUENTE">Capcom wiki</a>.</p></div>
-<div><h3>Something went wrong</h3><p>If a file doesn't verify, it's probably from another version of the game or a different MAME set. Tell me on <a href="https://x.com/hombreimagina">X</a> which one you have.</p></div>
+<div><h3>Which browsers work?</h3><p>Recent versions of Chrome, Edge, Firefox and Safari on a computer. The disc takes a few hundred MB of memory while it's being built.</p></div>
+<div><h3>Credits</h3><p>The bezel artwork is by Capcom, taken from the Capcom wiki.</p></div>
+<div><h3>Something went wrong</h3><p>If a file isn't found, it's probably from another version of the game or a different MAME set. Tell me on <a href="https://x.com/hombreimagina">X</a> which one you have.</p></div>
 </section>
 </main>
+<script type="module" src="/build/tiger-road/page.js?v=4d58814e"></script>
 </div>
 </body>
 </html>
