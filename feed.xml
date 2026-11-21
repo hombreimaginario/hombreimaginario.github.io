@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-21T23:02:03Z</updated>
+<updated>2026-11-21T23:13:36Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Tiger Road for Saturn and Dreamcast is out now!</title>
@@ -14,12 +14,12 @@
 <published>2026-11-21T12:00:00Z</published>
 <updated>2026-11-21T12:00:00Z</updated>
 <summary>After a last round of tests and fixes, the Saturn and Dreamcast versions of Tiger Road are finished, and you can build your disc image from the arcade ROM sets you own.</summary><category term="saturn"/><category term="dreamcast"/>
-<content type="html">&lt;p&gt;Two weeks ago I wrote that the Saturn and Dreamcast versions had caught up with the Mega Drive one. Since then I&#x27;ve tested the Saturn version on a real console and brought over the fixes that made sense from the Mega Drive. Both versions are now finished.&lt;/p&gt;
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-saturn-dreamcast/&quot;&gt;Two weeks ago I wrote&lt;/a&gt; that the Saturn and Dreamcast versions had caught up with the Mega Drive one. Since then I&#x27;ve tested the Saturn version on a real console and brought over the fixes that made sense from the Mega Drive. Both versions are now finished.&lt;/p&gt;
 &lt;p&gt;On the Saturn, with a Saroo, most of what I had to check was fine: the countdown in the stage select, the boss battles, the bezels during the pause. Wong&#x27;s attack shout didn&#x27;t play, though, while the children in the intro did. The sound chip didn&#x27;t restart the channel when the voice was stopped and started again in the same frame, so now it starts one frame later. The extra life sound was very shrill and is now one step quieter.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-dc-twins.png&quot; alt=&quot;Tiger Road: Lee Wong runs towards the two green giants in front of the throne, with the boss energy bar at the top.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
 &lt;/figure&gt;
-&lt;p&gt;Some of last week&#x27;s Mega Drive bugs can&#x27;t happen here. For instance, the Dreamcast has no sprite limit to worry about: all 160 sprites in the arcade&#x27;s list go to the PowerVR.&lt;/p&gt;
+&lt;p&gt;Some of &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-md-v1-2/&quot;&gt;last week&#x27;s Mega Drive bugs&lt;/a&gt; can&#x27;t happen here. For instance, the Dreamcast has no sprite limit to worry about: all 160 sprites in the arcade&#x27;s list go to the PowerVR.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&quot;https://hombreimaginario.com/img/2026/tiger-road-ss-dc-crocodiles.png&quot; alt=&quot;Tiger Road: Lee Wong stands on a sinking stone head in the yellow crocodile room, with two crocodiles in the water below.&quot; width=&quot;256&quot; height=&quot;224&quot; loading=&quot;lazy&quot;&gt;
 &lt;/figure&gt;
