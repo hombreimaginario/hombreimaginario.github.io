@@ -184,5 +184,17 @@
     "project": "tiger-road",
     "cover": "/img/2026/tiger-road-ss-dc-armors.png",
     "cover_alt": "Tiger Road: Lee Wong with his axe in a wooden hall full of spears, between two armoured soldiers on shelves."
+  },
+  {
+    "slug": "cruisn-usa-dc-finish-line",
+    "date": "2026-11-26",
+    "title": "Cruis'n USA DC: nearly at the finish line",
+    "summary": "Louder music, a livelier attract mode and a few more frames per second on real hardware. The port is close to done.",
+    "platforms": [
+      "dreamcast"
+    ],
+    "project": "cruisn-usa",
+    "cover": "/img/2026/cruisn-usa-dc-beverly-hills.png",
+    "cover_alt": "Cruis'n USA on the Dreamcast: a green jeep drives past a white mansion and palm trees in Beverly Hills, in fifth place."
   }
 ]
