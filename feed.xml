@@ -5,7 +5,7 @@
 <link href="https://hombreimaginario.com/feed.xml" rel="self"/>
 <link href="https://hombreimaginario.com/"/>
 <id>https://hombreimaginario.com/</id>
-<updated>2026-11-26T18:24:49Z</updated>
+<updated>2026-11-26T18:26:06Z</updated>
 <author><name>hombreimaginario</name></author>
 <entry>
 <title>Cruis&#x27;n USA DC: nearly at the finish line</title>
@@ -14,7 +14,7 @@
 <published>2026-11-26T12:00:00Z</published>
 <updated>2026-11-26T12:00:00Z</updated>
 <summary>Louder music, a livelier attract mode and a few more frames per second on real hardware. The port is close to done.</summary><category term="dreamcast"/>
-<content type="html">&lt;p&gt;Most of the work in the last few weeks came from playing the game over and over. The music, for a start, sounded far too quiet. Next to &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-saturn-dreamcast-out-now/&quot;&gt;Tiger Road&lt;/a&gt; and &lt;a href=&quot;https://hombreimaginario.com/posts/shadow-warrior-dc-30th-anniversary-edition/&quot;&gt;Shadow Warrior&lt;/a&gt; it was about 10 dB lower, because the sound bank was scaled to the loudest sound effect and the game runs at its factory volume, 200 out of 255. Race music is now 6 to 10 dB louder, and that factory setting counts as the maximum. Crashes had already been turned down 4.4 dB after a tester said they were too loud.&lt;/p&gt;
+<content type="html">&lt;p&gt;Most of the work in the last few weeks came from playing the game over and over. The music, for a start, sounded far too quiet. Next to &lt;a href=&quot;https://hombreimaginario.com/posts/tiger-road-saturn-dreamcast-out-now/&quot;&gt;Tiger Road&lt;/a&gt; and &lt;a href=&quot;https://hombreimaginario.com/posts/shadow-warrior-dc-30th-anniversary-edition/&quot;&gt;Shadow Warrior&lt;/a&gt; it was 10 to 19 dB lower, because the sound bank was scaled to the loudest sound effect and the game runs at its factory volume, 200 out of 255. Race music is now 6 to 10 dB louder, and that factory setting counts as the maximum. Crashes had already been turned down 4.4 dB after a tester said they were too loud.&lt;/p&gt;
 &lt;p&gt;Attract mode was missing two things from the arcade: the 3D Midway logo between the high scores and the demo race, and the rotating car after it. The logo is made of flat-shaded polygons that the port was throwing away (long story short, I had screwed up). The car never showed up because the demo race lasted 30 seconds, the lighter tracks I use in the port run out of scenery after about 22, and the game&#x27;s watchdog restarted everything. On a real console that meant 48 seconds of frozen picture, as the same tester reported. The demo race now ends on a real-time clock. The logo spins for a couple of seconds, and the music starts with it and keeps playing through the race.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&quot;https://hombreimaginario.com/img/2026/cruisn-usa-dc-chicago.png&quot; alt=&quot;Cruis&#x27;n USA on the Dreamcast: a yellow school bus drives through the concrete tunnel of the Chicago stage, chasing a red car.&quot; width=&quot;640&quot; height=&quot;480&quot; loading=&quot;lazy&quot;&gt;
